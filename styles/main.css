@@ -612,18 +612,15 @@ ol li:nth-of-type(n+10)::before {
 .fontContainer {
   position: relative;
   height: 23vw;
-  width: 28vw;
+  width: 25vw;
   margin: 1vw 0;
-  box-shadow: 0 0 1vh rgb(0, 0, 0);
   padding: 2vw;
-  background: rgba(255, 255, 255, 0.1);
+  border-top: .2vh solid var(--greyple);
 }
 
 .fontName {
   height: 5vw;
-  width: 24vw;
-  padding-bottom: 3vh;
-  border-bottom: .2vh solid var(--greyple);
+  width: 100%;
   text-align: center;
   font-family: "Big Noodle Titling", sans-serif;
   font-size: 3vw;
@@ -633,36 +630,58 @@ ol li:nth-of-type(n+10)::before {
 
 .fontName span {
   font-size: 2.5vh;
-  color: var(--greyple);
-}
-
-.fontName input.size {
-  background: rgba(0, 0, 0, 0.1);
-  border: .2vh solid #999;
-  outline: none;
-  height: 4vh;
-  width: 3vw;
-  font-size: 2.5vh;
-  resize: none;
-  overflow: hidden;
-  text-align: center;
-  margin-bottom: 2vh;
-  overflow: scroll;
   color: #ccc;
+  padding-right: 13vw;
 }
 
-input.size::-webkit-inner-spin-button, 
-input.size::-webkit-outer-spin-button { 
-  -webkit-appearance: none; 
-  margin: 0; 
+.fontName .size {
+  padding: 0;
+  margin: 1.5vw 0;
+  left: 50%;
+  transform: translateX(-35%);
+  position: absolute;
+  -webkit-appearance: none;
+  appearance: none;
+  width: 40%;
+  height: .3vh;
+  outline: none;
+  background: var(--greyple);
+}
+
+.fontName .size::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 1vw; 
+  height: 1vw; 
+  background: var(--fade-red); 
+  cursor: pointer; 
+  border-radius: 50%;
+}
+
+.fontName .size::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  transform: translate(-100%);
+}
+
+.fontName .size::-moz-range-thumb {
+  width: 1vw; 
+  height: 1vw; 
+  background: var(--fade-red); 
+  cursor: pointer; 
+  border-radius: 50%;
 }
 
 .fontPrev {
   position: relative;
   height: 14vw;
-  width: 24vw;
-  font-size: 3.5vh;
-  color: var(--not-black);
+  width: 100%;
+  font-size: 40px;
+  color: #ccc;
 }
 
 .fontPrev .scrollerWrap {
@@ -671,7 +690,6 @@ input.size::-webkit-outer-spin-button {
 
 .fontPrev .scroller {
   padding: 5vh;
-  color: #ccc;
 }
 
 .fontPrev .scroller:focus {
