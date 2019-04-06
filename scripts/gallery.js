@@ -6,7 +6,7 @@ $(document).ready(()=>{
     }));
   
       $.ajax({
-        url: "https://www.themonster.xyz/scripts/profiles.json", 
+        url: "https://www.themonster.xyz/docs/profiles.json", 
         dataType: 'json',
         success: function(data) {
           $.each(data, function(field) {
