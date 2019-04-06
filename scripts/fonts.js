@@ -28,7 +28,7 @@ $.ajax({
 
     logPending("Processing font link and preview...");
     $("#fonts p:nth-of-type(2)").append($("<textarea>", {
-      text: '<link href="https://ellexidecodes.github.io/Profile-Codes/free/fancy-fonts.css" rel="stylesheet">',
+      text: '<link href="https://www.themonster.xyz/styles/fancy-fonts.css" rel="stylesheet">',
       readonly: ""
     }));
 
