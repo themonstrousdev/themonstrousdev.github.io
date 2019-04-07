@@ -23,6 +23,7 @@ body {
   font-family: "Share", sans-serif;
   font-size: 2.7vh;
   color: #ccc;
+  line-height: normal;
 }
 
 * {
