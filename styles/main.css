@@ -528,14 +528,14 @@ ol li:nth-of-type(n+10)::before {
   right: 1vw;
   height: 1.5vw;
   width: 1.5vw;
-  background: url(https://ellexidecodes.github.io/Discord-Themes/assets/cancel.svg) center/100% no-repeat;
-  filter: invert(90%);
+  background: url(https://monstrousdev.github.io/themes/assets/svgs/cancel.svg) center/100% no-repeat;
+  filter: invert(30%);
   cursor: pointer;
   transition: all .2s ease-in-out;
 }
 
 #code .exit:hover {
-  filter: invert(30%);
+  filter: invert(60%);
 }
 
 #code .scrollerWrap {
