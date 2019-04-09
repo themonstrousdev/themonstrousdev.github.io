@@ -245,8 +245,23 @@
 }
 
 @font-face {
-  font-family: 'You Wont Bring Me Down' ; 
-  src: url('https://dl.dropbox.com/s/ljc6xpajtcokxsp/KGYouWontBringMeDown.ttf') format('truetype')
+  font-family: 'King Filled';
+  src: url("https://dl.dropbox.com/s/z2a8a2v9wp8lll1/KnightsQuest.ttf") format('truetype');
+}
+
+@font-face {
+   font-family: 'King Outline'; 
+   src: url('https://dl.dropbox.com/s/29w09k1bm8e1759/KnightsQuestCallig.ttf') format('truetype')
+}
+
+@font-face {
+  font-family: 'Lightness'; 
+  src: url('https://dl.dropbox.com/s/0r4nh2shkfqo2t4/vtks%20lightness%202.ttf') format('truetype')
+} /* letters only */
+
+@font-face {
+  font-family: 'Lovely Home'; 
+  src: url('https://dl.dropbox.com/s/kes1pt7n7q2zyln/Lovely%20Home.ttf') format('truetype')
 }
 
 @font-face {
@@ -268,6 +283,11 @@
   font-family: 'Mr De Haviland'; 
   src: url('https://dl.dropbox.com/s/64q2b8oytl74seh/MrDeHaviland-Regular.ttf') format('truetype')
 }
+
+@font-face {
+  font-family: 'Mustardo'; 
+  src: url('https://dl.dropbox.com/s/6h8ywrckp8kcuwe/mustardo.ttf') format('truetype')
+} /* no numbers */
 
 @font-face {
   font-family: 'Nightmare Pills'; 
@@ -295,6 +315,16 @@
 }
 
 @font-face {
+  font-family: 'Sensations'; 
+  src: url('https://dl.dropbox.com/s/0knx8wx2d9zz2e2/Sensations%20and%20Qualities.ttf') format('truetype')
+}
+
+@font-face {
+  font-family: 'Signature'; 
+  src: url('https://dl.dropbox.com/s/hjms4gm2mv2ki6a/Signature%20of%20the%20Ancient.ttf') format('truetype')
+} /* no symbols */
+
+@font-face {
   font-family: 'Skytree'; 
   src: url('https://dl.dropbox.com/s/oug3fos5gz35vrh/Skytree%20one.ttf') format('truetype')
 } /* letters only */
@@ -313,6 +343,16 @@
   font-family: 'Superstar'; 
   src: url('https://dl.dropbox.com/s/68r0bgpi9ovximw/Superstar%20Personal%20Use.ttf') format('truetype')
 } /* letters only */
+
+@font-face {
+  font-family: 'The Blacklist'; 
+  src: url('https://dl.dropbox.com/s/0oauwu0kdu347v8/The%20Blacklist.ttf') format('truetype')
+}
+
+@font-face {
+  font-family: 'The Mumbai Sticker'; 
+  src: url('https://dl.dropbox.com/s/zclnru4wpjtpzxz/TheMumbaiStickerDemo-SVG.ttf') format('truetype')
+} /* some symbols */
 
 @font-face {
   font-family: 'The West Gate'; 
@@ -340,36 +380,22 @@
 }
 
 @font-face {
-  font-family: 'Lightness'; 
-  src: url('https://dl.dropbox.com/s/0r4nh2shkfqo2t4/vtks%20lightness%202.ttf') format('truetype')
-} /* letters only */
-
-@font-face {
-  font-family: 'Lovely Home'; 
-  src: url('https://dl.dropbox.com/s/kes1pt7n7q2zyln/Lovely%20Home.ttf') format('truetype')
+  font-family: 'You Wont Bring Me Down' ; 
+  src: url('https://dl.dropbox.com/s/ljc6xpajtcokxsp/KGYouWontBringMeDown.ttf') format('truetype')
 }
 
-@font-face {
-  font-family: 'Mustardo'; 
-  src: url('https://dl.dropbox.com/s/6h8ywrckp8kcuwe/mustardo.ttf') format('truetype')
-} /* no numbers */
 
-@font-face {
-  font-family: 'Sensations'; 
-  src: url('https://dl.dropbox.com/s/0knx8wx2d9zz2e2/Sensations%20and%20Qualities.ttf') format('truetype')
-}
 
-@font-face {
-  font-family: 'Signature'; 
-  src: url('https://dl.dropbox.com/s/hjms4gm2mv2ki6a/Signature%20of%20the%20Ancient.ttf') format('truetype')
-} /* no symbols */
 
-@font-face {
-  font-family: 'The Blacklist'; 
-  src: url('https://dl.dropbox.com/s/0oauwu0kdu347v8/The%20Blacklist.ttf') format('truetype')
-}
 
-@font-face {
-  font-family: 'The Mumbai Sticker'; 
-  src: url('https://dl.dropbox.com/s/zclnru4wpjtpzxz/TheMumbaiStickerDemo-SVG.ttf') format('truetype')
-} /* some symbols */
+
+
+
+
+
+
+
+
+
+
+
