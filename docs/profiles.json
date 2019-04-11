@@ -1,6 +1,11 @@
 {
   "commission": [
     {
+      "name": "Arthur Alter",
+      "background": "https://i.imgur.com/JUoMkn7.jpg",
+      "preview": "https://i.imgur.com/CkgEBEm.gif"
+    },
+    {
       "name": "Kayla",
       "background": "https://i.imgur.com/xAB8OfP.png",
       "preview": "https://i.imgur.com/8mGKkdR.gif"
