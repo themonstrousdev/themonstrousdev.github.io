@@ -10,6 +10,24 @@ function logPending(text) {
   console.log("%c[PROCESSING]: %c"+text, "color: yellow; font-weight: bold; font-family: monospace", "color:black; font-family: monospace");
 }
 
+function showLoading() {
+  $("#content").append(`
+  <div id="loading">
+    <div class="texture"></div>
+    <div id="load"></div>
+    <div id="message">. . . Loading Content. . .</div>
+  </div>
+  `);
+};
+
+function endLoad() {
+  $("#loading").fadeOut(200);
+
+  setTimeout(function(){
+    $("#loading").remove();
+  }, 200);
+}
+
 $(window).on("load", ()=>{
     $("#loading").fadeOut(1000);
     
