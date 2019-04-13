@@ -1,7 +1,7 @@
 
 var curIndex, images;
 
-fetch("https://www.themonster.xyz/docs/profiles.json")
+promise = fetch("https://www.themonster.xyz/docs/profiles.json")
   .then(res => {
     return res.json();
   })
@@ -322,24 +322,18 @@ fetch("https://www.themonster.xyz/docs/profiles.json")
       return data
   })
   .then(res => {
-    $(".scrollerWrap.body.notLoaded").animate({
-      "opacity": "1"
-    }, 500);
+    var container = $(".scrollerWrap.body.notLoaded");
+    container.waitForImages(()=>{
+      container.animate({
+        "opacity": "1",
+      }, 200);
+      setTimeout(() => {
+        container.css("pointer-events", "all");
+      }, 200);
       loaded = true;
+    })
       endLoad();
   })
   .catch(err => {
     logError(err);
   })
-
-
-      // $.ajax({
-      //   url: "https://www.themonster.xyz/docs/profiles.json", 
-      //   dataType: 'json',
-      //   success: function(data) {
-          
-      //   },
-      //   error: function(){
-      //     console.log("LMFAO RIP");
-      //   }
-      // });

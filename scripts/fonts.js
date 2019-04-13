@@ -1,4 +1,4 @@
-fetch("https://www.themonster.xyz/styles/fancy-fonts.css")
+promise = fetch("https://www.themonster.xyz/styles/fancy-fonts.css")
   .then(res => {
   
     return res.text()
@@ -85,9 +85,13 @@ fetch("https://www.themonster.xyz/styles/fancy-fonts.css")
     return data;
   })
   .then(res => {
-    $(".scrollerWrap.body.notLoaded").animate({
+    var container = $(".scrollerWrap.body.notLoaded");
+    container.animate({
       "opacity": "1"
-    }, 500);
+    }, 200);
+    setTimeout(() => {
+      container.css("pointer-events", "all");
+    }, 200);
     loaded = true;
     endLoad();
   })

@@ -1,4 +1,4 @@
-fetch("https://www.themonster.xyz/docs/list.json")
+promise = fetch("https://www.themonster.xyz/docs/list.json")
   .then(res => {
     return res.json()
   })
@@ -58,10 +58,14 @@ fetch("https://www.themonster.xyz/docs/list.json")
     return data
   })
   .then(res => {
-    $(".scrollerWrap.body.notLoaded").animate({
+    var conainer = $(".scrollerWrap.body.notLoaded");
+    conainer.animate({
       "opacity": "1"
-    }, 500);
-    loaded = true;
+    }, 200);
+    setTimeout(() => {
+      container.css("pointer-events", "all");
+    }, 200);
+      loaded = true;
     endLoad();
   })
   .catch(err => {

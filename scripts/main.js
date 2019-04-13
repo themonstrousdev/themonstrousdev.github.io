@@ -1,3 +1,5 @@
+var body = {url: "./src/home.html"}, loaded = false, promise = null, loader;
+
 function logError(text) {
   console.log("%c[ERROR]: %c" + text, "color: red; font-weight: bold;font-family: monospace", "color: black; font-family: monospace");
 }
@@ -28,25 +30,86 @@ function endLoad() {
   }, 200);
 }
 
-$(window).on("load", ()=>{
-    $("#loading").fadeOut(1000);
-    
-    setTimeout(function(){
-      $("#loading").remove();
-    }, 1500);
-});
+function getData() {
+  fetch(body.url)
+  .then(function(response) {
+    return response.text();
+  }).then(function(string) {
+    $("#content").html(string);
+  });
+}
 
 $(document).ready(()=>{
-  $(".unset-style, .button:not(a)").click(function(){
-    var opens = `#${$(this).attr("opens")}`;
-    if($(opens).is(":visible")) {
+  var content = $("#content"),
+  currentTab = content.attr("open-tab");
+
+  $("body").append($("<div />", {
+    id: "tooltips"
+  }));
+
+
+  
+
+  $(".headerBar .button, .logo.home").click(function(){
+    if(currentTab == $(this).attr("opens")) {
       return;
     }
+    var elem = $(this),
+    script = elem.attr("script");
+    currentTab = elem.attr("opens");
+    loaded = false;
+    clearTimeout(loader);
+    body = {
+      url: `https://www.themonster.xyz/src/${currentTab}.html`,
+      reqScript: script?`https://www.themonster.xyz/${script}.js`:null
+    }
 
-    $(".scrollerWrap.body").fadeOut(200);
+    $(`.scrollerWrap.body:not(#${currentTab})`).fadeOut(200);
     setTimeout(function(){
-      $(opens).fadeIn(200);
-      $(opens).addClass("open");
+      $(`.scrollerWrap.body:not(#${currentTab})`).remove();
     }, 200);
+
+    setTimeout(() => {
+      getData();
+      if(body.reqScript == null) {
+        loaded = true;
+      }
+      setTimeout(()=>{
+        if(body.reqScript != null) {
+          $('body').append(function() {
+            return $("<script>", {
+              id: `${currentTab}-script`,
+              src: body.reqScript
+            });
+          })
+        } else {
+          $("script[id*='-script']").remove();
+        }
+      }, 100);
+    }, 300);
+
+    function checkLoad() {
+      if ( loaded ) {
+        if($("body").find("#loading").length > 0) {
+          endLoad();
+        }
+      } else if (!loaded) {
+        if($("body").find("#loading").length == 0) {
+          showLoading();
+          console.log(currentTab);
+        }
+        setTimeout(checkLoad, 100);
+      };
+    }
+
+    loader = setTimeout(() => {
+      checkLoad();
+    }, 2000);
+
   });
+});
+
+$(window).on("load", ()=>{
+  getData();
+  endLoad();
 });
