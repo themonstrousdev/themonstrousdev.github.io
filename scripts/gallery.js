@@ -1,5 +1,72 @@
 
-var curIndex, images;
+var curIndex, images, imageLoaded = false;
+
+function showImage() {
+  $("#gallOverlay #load").fadeOut(200);
+  $("#gallOverlay #message").fadeOut(200);
+  setTimeout(() => {
+    if($("#gallOverlay #load") && $("#gallOverlay #message")) {
+      $("#gallOverlay #load").remove();
+      $("#gallOverlay #message").remove();
+    }
+  $("#gallOverlay img").fadeIn(200);
+  }, 200);
+}
+
+function imgLoader() {
+  if(!imageLoaded && $("#gallOverlay").find("#load").length == 0 && $("#gallOverlay").find("#message").length == 0) {
+    $("<div>", {
+      id: "load",
+      style: "border: none;transform:translate(-50%, -50%)"
+    }).insertBefore("#gallOverlay .next");
+    
+    $("<div>", {
+      id: "message",
+      class: "show-image",
+      html: "Image Loading<br>Show Image Anyway",
+      click: function() {
+        showImage()
+      }
+    }).insertBefore("#gallOverlay .next");
+  }
+}
+
+function readyImg() {
+  if ($("#gallOverlay").find("img").length == 0 || $("body").find("#gallOverlay").length == 0) {
+    return;
+  }
+  if ( document.getElementById("gallOverlay").querySelector("img").complete ) {
+    console.log("Finally loaded.");
+    imageLoaded = true;
+    showImage();
+  } else if (!document.getElementById("gallOverlay").querySelector("img").complete) {
+    setTimeout(readyImg, 100);
+  } else {
+    console.log("What the fuck?");
+  };
+}
+
+function changePicture(ind, field) {
+  var newPic = $(`.item.${field}`).eq(ind).attr("img"),
+  newCode = $(`.item.${field}`).eq(ind).attr("code");
+  imageLoaded = false;
+
+  $("#gallOverlay img").replaceWith(function(){
+    return $("<img>", {
+      src: newPic,
+      style: "display: none;"
+    })
+  });
+
+  imgLoader();
+
+  if(!imageLoaded) {
+    readyImg();
+  }
+
+    
+  $("#gallOverlay .source").attr("opens", newCode);
+}
 
 fetch("https://www.themonster.xyz/docs/profiles.json")
   .then(res => {
@@ -29,15 +96,15 @@ fetch("https://www.themonster.xyz/docs/profiles.json")
               curIndex = $(this).index();
               images = $(`.item.${field}`).length;
               
-              function changePicture(ind) {
-                var newPic = $(`.item.${field}`).eq(ind).attr("img");
+              // function changePicture(ind) {
+              //   var newPic = $(`.item.${field}`).eq(ind).attr("img");
             
-                $("#gallOverlay img").replaceWith(function(){
-                  return $("<img>", {
-                    src: newPic
-                  })
-                });
-              }
+              //   $("#gallOverlay img").replaceWith(function(){
+              //     return $("<img>", {
+              //       src: newPic
+              //     })
+              //   });
+              // }
     
               $("<div />", {
                 id: "gallOverlay"
@@ -62,30 +129,36 @@ fetch("https://www.themonster.xyz/docs/profiles.json")
                 click: function() {
                   if(curIndex !== 0) {
                   --curIndex;
-                  changePicture(curIndex)
+                  changePicture(curIndex, field)
                   } else {
                     curIndex = images - 1;
-                    changePicture(curIndex)
+                    changePicture(curIndex, field)
                   }
                 }
               }).appendTo("#gallOverlay .flexBox");
     
               $("<img>", {
-                src: $(this).attr("img")
+                src: $(this).attr("img"),
+                style: "display: none"
               }).appendTo("#gallOverlay .flexBox");
-    
+
               $("<div />", {
                 class: "next",
                 click: function() {
                   if(curIndex !== (images - 1)) {
                     ++curIndex;
-                    changePicture(curIndex)
+                    changePicture(curIndex, field)
                   } else {
                     curIndex = 0;
-                    changePicture(curIndex)
+                    changePicture(curIndex, field)
                   }
                 }
               }).appendTo("#gallOverlay .flexBox");
+
+              imgLoader();
+              if(!document.getElementById("gallOverlay").querySelector("img").complete) {
+                readyImg();
+              }
             },
             mouseenter: function() {
               var tipPosition = $(this).offset();
@@ -117,18 +190,6 @@ fetch("https://www.themonster.xyz/docs/profiles.json")
             click: function() {
               curIndex = $(this).index();
               images = $(`.item.${field}`).length;
-              
-              function changePicture(ind) {
-                var newPic = $(`.item.${field}`).eq(ind).attr("img"),
-                newCode = $(`.item.${field}`).eq(ind).attr("code");
-            
-                $("#gallOverlay img").replaceWith(function(){
-                  return $("<img>", {
-                    src: newPic
-                  })
-                });
-                $("#gallOverlay .source").attr("opens", newCode);
-              }
     
               $("<div />", {
                 id: "gallOverlay"
@@ -163,10 +224,10 @@ fetch("https://www.themonster.xyz/docs/profiles.json")
 
                   if(curIndex !== 0) {
                   --curIndex;
-                  changePicture(curIndex)
+                  changePicture(curIndex, field)
                   } else {
                     curIndex = images - 1;
-                    changePicture(curIndex)
+                    changePicture(curIndex, field)
                   }
                 }
               }).appendTo("#gallOverlay .flexBox");
@@ -178,7 +239,7 @@ fetch("https://www.themonster.xyz/docs/profiles.json")
               $("<img>", {
                 src: $(this).attr("img")
               }).appendTo("#gallOverlay .flexBox .imageHolder");
-    
+
               $("<div />", {
                 class: "source",
                 opens: $(this).attr("code"),
@@ -293,13 +354,18 @@ fetch("https://www.themonster.xyz/docs/profiles.json")
 
                   if(curIndex !== (images - 1)) {
                     ++curIndex;
-                    changePicture(curIndex)
+                    changePicture(curIndex, field)
                   } else {
                     curIndex = 0;
-                    changePicture(curIndex)
+                    changePicture(curIndex, field)
                   }
                 }
               }).appendTo("#gallOverlay .flexBox");
+
+              imgLoader();
+              if(!document.getElementById("gallOverlay").querySelector("img").complete) {
+                readyImg();
+              }
             },
             mouseenter: function() {
               var tipPosition = $(this).offset();

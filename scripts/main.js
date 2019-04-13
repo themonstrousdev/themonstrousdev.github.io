@@ -63,7 +63,7 @@ $(document).ready(()=>{
     clearTimeout(loader);
     body = {
       url: `https://www.themonster.xyz/src/${currentTab}.html`,
-      reqScript: script?`https://www.themonster.xyz/scripts/${script}.js`:null
+      reqScript: script?`./scripts/${script}.js`:null
     }
 
     $(`.scrollerWrap.body:not(#${currentTab})`).fadeOut(200);
