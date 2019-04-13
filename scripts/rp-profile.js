@@ -7,17 +7,13 @@ function showRP() {
       var cut = text.search("/script") + 8,
       html = text.slice(cut);
 
-      $("<div>", {
-        id: "background",
-        html: html
-      }).insertBefore("#choose");
-
+      $("#background").append(html);
       document.getElementById("exitProfile").onclick = function() {
         removeRP()
       }
 
       setTimeout(function(){
-        $("#choose").fadeOut(200);
+        $("#background").fadeIn(200);
       }, 200)
     })
 }

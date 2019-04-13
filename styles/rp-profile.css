@@ -48,6 +48,7 @@ body {
   width: 100%;
   overflow: hidden;
   background: url("https://www.transparenttextures.com/patterns/az-subtle.png") top left/8%, linear-gradient(to bottom right, rgba(154, 125, 85, .5), rgba(62, 83, 126, .5)), linear-gradient(to right, rgba(43, 32, 49, .5), rgba(40, 35, 67, .5)), url(https://i.imgur.com/hULyJTL.jpg) center/cover no-repeat;
+  display: none;
 }
 
 #deum {
