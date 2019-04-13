@@ -21,7 +21,7 @@ function showRP() {
 function removeRP() {
   $("#background").fadeOut(200);
   setTimeout(() => {
-    $("#background").remove();
+    $("#background").html();
   }, 200);
 }
 
