@@ -13,6 +13,7 @@ function showRP() {
       }
 
       setTimeout(function(){
+        $("#choose").fadeOut(200);
         $("#background").fadeIn(200);
       }, 200)
     })
