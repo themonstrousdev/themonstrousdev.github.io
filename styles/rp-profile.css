@@ -23,15 +23,16 @@
   border-radius: 1vh;
   text-align: center;
   font-family: "Big Noodle Titling", sans-serif;
-  font-size: 3vh;
+  font-size: 4vh;
   color: #aaa;
   cursor: pointer;
   transition: all .2s ease-in-out;
-  margin: 0 2vw;
+  margin: 0 3vw;
+  background: rgba(0, 0, 0, .3);
 }
 
 .choice__prof:hover {
-  background: rgba(0, 0, 0, .3);
+  background: rgba(0, 0, 0, .6);
 }
 
 html,
