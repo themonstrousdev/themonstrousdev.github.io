@@ -1,4 +1,4 @@
-fetch("../docs/list.json")
+fetch("https://www.themonster.xyz/docs/list.json")
   .then(res => {
     return res.json()
   })
@@ -55,10 +55,12 @@ fetch("../docs/list.json")
       }
     })
 
-    logSuccess("Updated list");
     return data
   })
   .then(res => {
+    $(".scrollerWrap.body.notLoaded").animate({
+      "opacity": "1"
+    }, 500);
     loaded = true;
     endLoad();
   })

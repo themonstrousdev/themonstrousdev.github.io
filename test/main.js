@@ -108,7 +108,7 @@ $(document).ready(()=>{
   });
 });
 
-$(document).ready(()=>{
+$(document).on("load", ()=>{
   getData();
   endLoad();
 });

@@ -1,3 +1,15 @@
+function logError(text) {
+  console.log("%c[ERROR]: %c" + text, "color: red; font-weight: bold;font-family: monospace", "color: black; font-family: monospace");
+}
+
+function logSuccess(text) {
+  console.log("%c[SUCCESS]: %c"+text, "color: green; font-weight: bold; font-family: monospace", "color:black; font-family: monospace");
+}
+
+function logPending(text) {
+  console.log("%c[PROCESSING]: %c"+text, "color: yellow; font-weight: bold; font-family: monospace", "color:black; font-family: monospace");
+}
+
 $(window).on("load", ()=>{
     $("#loading").fadeOut(1000);
     

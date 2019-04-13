@@ -319,8 +319,6 @@ $(document).ready(()=>{
         }
         $("#gallery .scroller").append($("<hr>"));
         });
-
-        logSuccess("Loaded gallery.");
         return data
     })
     .then(res => {
