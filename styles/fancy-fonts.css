@@ -1,4 +1,9 @@
 @font-face {
+   font-family: '300 Trojans'; 
+   src: url('https://dl.dropbox.com/s/pf2c6m2f75kpcbq/300trojans.ttf') format('truetype')
+}
+
+@font-face {
   font-family: '8-Bit Wonder'; 
   src: url('https://dl.dropbox.com/s/mn8vff42fv9uw3y/8-BIT%20WONDER.TTF') format('truetype')
 }
@@ -12,6 +17,11 @@
   font-family: 'Above'; 
   src: url('https://dl.dropbox.com/s/tdoi59h9cnnykvt/ABOVE%20%20-%20PERSONAL%20USE%20ONLY.ttf') format('truetype')
 } /* no numbers */
+
+@font-face {
+   font-family: 'Aegis'; 
+   src: url('https://dl.dropbox.com/s/g5ez58qkv6vct0g/aegis1.ttf') format('truetype')
+}
 
 @font-face {
   font-family: 'Ailerons'; 
@@ -39,9 +49,29 @@
 } /* no numbers */
 
 @font-face {
+   font-family: 'Ancient'; 
+   src: url('https://dl.dropbox.com/s/9jqnsprkww272oi/jancient.ttf') format('truetype')
+}
+
+@font-face {
   font-family: 'Angel Tears'; 
   src: url('https://dl.dropbox.com/s/l8591ps5hfo3viw/ANGEL___.otf') format('opentype')
 } /* letters only */
+
+@font-face {
+   font-family: 'Angeline Vintage'; 
+   src: url('https://dl.dropbox.com/s/5htbx2kebqc0r3n/Angeline%20Vintage.otf') format('opentype')
+}
+
+@font-face {
+   font-family: 'Angelique'; 
+   src: url('https://dl.dropbox.com/s/6yq9dn1jlbb6vu3/Angelique%20ma%20douce%20Colombe.ttf') format('truetype')
+}
+
+@font-face {
+   font-family: 'Angllie Script'; 
+   src: url('https://dl.dropbox.com/s/pyr6h4piaz9n1df/Angellie%20Script.ttf') format('truetype')
+}
 
 @font-face {
   font-family: 'Athena'; 
@@ -62,6 +92,11 @@
   font-family: 'Basquiat'; 
   src: url('https://dl.dropbox.com/s/6lopjo6jghs8sqx/Basquiat.otf') format('opentype')
 } /* letters only */
+
+@font-face {
+   font-family: 'Battle Angel'; 
+   src: url('https://dl.dropbox.com/s/gygy2lphosym28y/Battle%20Angel.otf') format('opentype')
+}
 
 @font-face {
   font-family: 'Beautiful People'; 
@@ -108,6 +143,11 @@
   font-family: 'Brilliantte'; 
   src: url('https://dl.dropbox.com/s/q8rbedp9hh1ryo0/Brilliantte.ttf') format('truetype')
 } /* letters only */
+
+@font-face {
+   font-family: 'Caesar Dressing'; 
+   src: url('https://dl.dropbox.com/s/i1f1g4o3c70ipp9/CaesarDressing-Regular.ttf') format('truetype')
+}
 
 @font-face {
   font-family: 'Calligraphy Dry'; 
@@ -165,6 +205,11 @@
 }
 
 @font-face {
+   font-family: 'Diogenes'; 
+   src: url('https://dl.dropbox.com/s/rflq35ntq0cwj0j/DIOGENES.ttf') format('truetype')
+}
+
+@font-face {
   font-family: 'Dollyn'; 
   src: url('https://dl.dropbox.com/s/ymgry7pfm6dnwf0/Dollyn.ttf') format('truetype')
 }
@@ -193,6 +238,11 @@
   font-family: 'Graceland'; 
   src: url('https://dl.dropbox.com/s/fani8acg4flzens/Graceland%20Personal%20Use.ttf') format('truetype')
 } /* letters only */
+
+@font-face {
+   font-family: 'Grecian Formula'; 
+   src: url('https://dl.dropbox.com/s/tqigv27y3fre9sp/grec.ttf') format('truetype')
+}
 
 @font-face {
   font-family: 'Greed'; 
@@ -235,6 +285,27 @@
 } /* lowercase only */
 
 @font-face {
+   font-family: 'Isis'; 
+   font-weight: 400;
+   font-style: normal;
+   src: url('https://dl.dropbox.com/s/fbrha5ir249e405/ohmightyisis.ttf') format('truetype')
+}
+
+@font-face {
+   font-family: 'Isis'; 
+   font-weight: 400;
+   font-style: italic;
+   src: url('https://dl.dropbox.com/s/5olj5frfla1gzzd/ohmightyisisital.ttf') format('truetype')
+}
+
+@font-face {
+   font-family: 'Isis'; 
+   font-weight: 700;
+   font-style: normal;
+   src: url('https://dl.dropbox.com/s/kzbofm3fyxglrsb/ohmightyisisbold.ttf') format('truetype')
+}
+
+@font-face {
   font-family: 'Italiano'; 
   src: url('https://dl.dropbox.com/s/qpwz38sxm54z087/Italiano%20.otf') format('opentype')
 }
@@ -275,6 +346,16 @@
 } /* letters only */
 
 @font-face {
+   font-family: 'Marathon'; 
+   src: url('https://dl.dropbox.com/s/6ap47625j23gs06/Marav2.ttf') format('truetype')
+}
+
+@font-face {
+   font-family: 'Metrolox'; 
+   src: url('https://dl.dropbox.com/s/nzglpml309iiu6j/METROLOX.ttf') format('truetype')
+}
+
+@font-face {
   font-family: 'Midnight in October'; 
   src: url('https://dl.dropbox.com/s/dbe6uncqrsjlbk8/Midnight%20in%20October%20-%20TTF.ttf') format('truetype')
 }
@@ -305,13 +386,28 @@
 }
 
 @font-face {
+   font-family: 'Olympus'; 
+   src: url('https://dl.dropbox.com/s/ygejlbwykhbdei7/OLYMB___.TTF') format('truetype')
+}
+
+@font-face {
   font-family: 'Otsutome'; 
   src: url(https://dl.dropbox.com/s/0l9rd5jt1g3ay9m/OtsutomeFont_Ver2.ttf) format('truetype')
 }
 
 @font-face {
+   font-family: 'Praying Angel'; 
+   src: url('https://dl.dropbox.com/s/ka1ogvzswf7xkyj/Praying%20Angel.ttf') format('truetype')
+}
+
+@font-face {
   font-family: 'Purista'; 
   src: url('https://dl.dropbox.com/s/hyrmlnvqno8g1mk/Purista%20Medium.otf') format('opentype')
+}
+
+@font-face {
+   font-family: 'Pythia'; 
+   src: url('https://dl.dropbox.com/s/t2on8j9lnkuylp7/pythia.ttf') format('truetype')
 }
 
 @font-face {
@@ -337,6 +433,20 @@
 @font-face {
   font-family: 'Speeding Brush'; 
   src: url('https://dl.dropbox.com/s/p1ues755lg7b7i3/Speeding%20Brush.ttf') format('truetype')
+}
+
+@font-face {
+   font-family: 'SPQR'; 
+   font-weight: 400;
+   font-style: normal;
+   src: url('https://www.dropbox.com/s/mwt6s08tlb26bxp/spqr.ttf') format('truetype')
+}
+
+@font-face {
+   font-family: 'SPQR'; 
+   font-weight: 400;
+   font-style: italic;
+   src: url('https://dl.dropbox.com/s/hj176x9bxvhhatq/spqri.ttf') format('truetype')
 }
 
 @font-face {
@@ -377,6 +487,11 @@
 @font-face {
   font-family: 'Voyager'; 
   src: url('https://dl.dropbox.com/s/oddqjxxbqfdulli/V-GERB%28bold%29.ttf') format('truetype')
+}
+
+@font-face {
+   font-family: 'White Angelica'; 
+   src: url('https://dl.dropbox.com/s/japy0y6h66k9ztz/WhiteAngelica.ttf') format('truetype')
 }
 
 @font-face {
