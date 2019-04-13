@@ -22,7 +22,7 @@ function showRP() {
 function removeRP() {
   $("#background").fadeOut(200);
   setTimeout(() => {
-    $("#background").html();
+    $("#background").innerHTML = "";
   }, 200);
 }
 
