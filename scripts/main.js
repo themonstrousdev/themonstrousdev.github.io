@@ -34,8 +34,10 @@ function getData() {
   fetch(body.url)
   .then(function(response) {
     return response.text();
-  }).then(function(string) {
-    $("#content").html(string);
+  }).then(function(text) {
+    var cut = text.search("/script") + 8,
+    html = text.slice(cut);
+    $("#content").html(html);
   });
 }
 
