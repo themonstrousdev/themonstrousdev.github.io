@@ -1,7 +1,7 @@
 
 var curIndex, images;
 
-promise = fetch("https://www.themonster.xyz/docs/profiles.json")
+fetch("https://www.themonster.xyz/docs/profiles.json")
   .then(res => {
     return res.json();
   })

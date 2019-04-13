@@ -1,4 +1,4 @@
-var body = {url: "./src/home.html"}, loaded = false, promise = null, loader;
+var body = {url: "./src/home.html"}, loaded = false, loader;
 
 function logError(text) {
   console.log("%c[ERROR]: %c" + text, "color: red; font-weight: bold;font-family: monospace", "color: black; font-family: monospace");
@@ -61,7 +61,7 @@ $(document).ready(()=>{
     clearTimeout(loader);
     body = {
       url: `https://www.themonster.xyz/src/${currentTab}.html`,
-      reqScript: script?`https://www.themonster.xyz/${script}.js`:null
+      reqScript: script?`https://www.themonster.xyz/scripts/${script}.js`:null
     }
 
     $(`.scrollerWrap.body:not(#${currentTab})`).fadeOut(200);

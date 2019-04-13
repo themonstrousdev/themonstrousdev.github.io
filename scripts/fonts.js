@@ -1,4 +1,4 @@
-promise = fetch("https://www.themonster.xyz/styles/fancy-fonts.css")
+fetch("https://www.themonster.xyz/styles/fancy-fonts.css")
   .then(res => {
   
     return res.text()
