@@ -91,8 +91,8 @@ fetch("https://www.themonster.xyz/styles/fancy-fonts.css")
     $(".scrollerWrap.body.notLoaded").animate({
       "opacity": "1"
     }, 500);
-      loaded = true;
-      endLoad();
+    loaded = true;
+    endLoad();
   })
   .catch(err => {
     logError("Problem loading fonts. Please check your function");

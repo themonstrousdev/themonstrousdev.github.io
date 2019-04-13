@@ -47,7 +47,7 @@ fetch("../docs/list.json")
           comment = data[`${field}`][i]['comment'];
 
           list.append($("<li>", {
-            html: `<b class="greyple">${name}</b>${comment.text==""?null : comment.weight == "bold" ? `<b class="${comment.color}">${comment.text}</b>`:`<span class="${comment.color}">${comment.text}</span>`}`
+            html: `<b class="greyple">${name}</b>${comment.text==""?null : comment.weight == "bold" ? ` - <b class="${comment.color}">${comment.text}</b>`:` - <span class="${comment.color}">${comment.text}</span>`}`
           }))
         }
       } else {
@@ -59,10 +59,8 @@ fetch("../docs/list.json")
     return data
   })
   .then(res => {
-    setTimeout(function() {
-      loaded = true;
-      endLoad();
-    }, 200);
+    loaded = true;
+    endLoad();
   })
   .catch(err => {
     logError(err);
