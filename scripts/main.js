@@ -1,4 +1,4 @@
-var body = {url: "./src/home.html"}, loaded = false, loader;
+var body = {url: "https://www.themonster.xyz/src/home.html"}, loaded = false, loader;
 
 function logError(text) {
   console.log("%c[ERROR]: %c" + text, "color: red; font-weight: bold;font-family: monospace", "color: black; font-family: monospace");
