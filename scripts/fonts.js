@@ -1,22 +1,12 @@
-function logError(text) {
-  console.log("%c[ERROR]: %c" + text, "color: red; font-weight: bold;font-family: monospace", "color: black; font-family: monospace");
-}
-
-function logSuccess(text) {
-  console.log("%c[SUCCESS]: %c"+text, "color: green; font-weight: bold; font-family: monospace", "color:black; font-family: monospace");
-}
-
-function logPending(text) {
-  console.log("%c[PROCESSING]: %c"+text, "color: yellow; font-weight: bold; font-family: monospace", "color:black; font-family: monospace");
-}
-
-$.ajax({
-  url: "https://www.themonster.xyz/styles/fancy-fonts.css",
-  dataType: "text",
-  success: function(data) {
+fetch("https://www.themonster.xyz/styles/fancy-fonts.css")
+  .then(res => {
+  
+    return res.text()
+  })
+  .then(data => {
     logSuccess("Caught fonts!");
 
-    var quotes = ["Hold me close and hold me fast. This magic spell you cast.", "When you press me to your heart, we're in a worl apart. A world where roses bloom", "And when you speak angels sing from above. Everyday words seem to turn into love songs.", "What's the matter with you, baby? You look really sad.", "Marry a rich boy. Be a rich girl. Buy a big house, on top of the world.", "Why are you so angry? Have I done something bad? If it isn't me, then sing me your song.", "Play nice, dress up, don't forget your make up. You really should impress him, once you take your medicine", "If I'm in a crowd, do I stand alone? You know all the words but don't sing along.", "I want to make you mine and take you everywhere I go.", "I don't need a camera to see your point of view. I need someone to turn to.", "I guess my heart never learns. No use in finding the words.", "You're never here when it hurts. 'Cause I'm a joke waiting for the punchline.", "When he sees me, what if he doesn't like it? What if he opens up a door and I can't close it? What happens then?", "If when he holds me, my heart is set in motion. What if I give myself away to only get it given back. How could I live with that?"];
+    var quotes = ["Hold me close and hold me fast. This magic spell you cast.", "When you press me to your heart, we're in a worl apart. A world where roses bloom", "And when you speak angels sing from above. Everyday words seem to turn into love songs.", "What's the matter with you, baby? You look really sad.", "Marry a rich boy. Be a rich girl. Buy a big house, on top of the world.", "Why are you so angry? Have I done something bad? If it isn't me, then sing me your song.", "Play nice, dress up, don't forget your make up. You really should impress him, once you take your medicine", "If I'm in a crowd, do I stand alone? You know all the words but don't sing along.", "I want to make you mine and take you everywhere I go.", "I don't need a camera to see your point of view. I need someone to turn to.", "I guess my heart never learns. No use in finding the words.", "You're never here when it hurts. 'Cause I'm a joke waiting for the punchline.", "When he sees me, what if he doesn't like it? What if he opens up a door and I can't close it? What happens then?", "If when he holds me, my heart is set in motion. What if I give myself away to only get it given back. How could I live with that?", "How do we fall in love harder than a bullet could hit you?", "How do we fall apart faster than a hair pin trigger?", "Shut your mouth, baby, stand and deliver. Holy hands, oh, they make me a sinner.", "Choke this love 'til the veins start to shiver. One last breath 'til the tears start to wither."];
     var lastQuote = Math.floor(Math.random() * Math.floor(quotes.length)), nextQuote = null,
     allFonts = [];
 
@@ -27,10 +17,8 @@ $.ajax({
     }
 
     logPending("Processing font link and preview...");
-    $("#fonts p:nth-of-type(2)").append($("<textarea>", {
-      text: '<link href="https://www.themonster.xyz/styles/fancy-fonts.css" rel="stylesheet">',
-      readonly: ""
-    }));
+    $("textarea#google-fonts-link").text('link href="https://www.themonster.xyz/styles/google-fonts.css" rel="stylesheet">')
+    $("textarea#fancy-fonts-link").text('<link href="https://www.themonster.xyz/styles/fancy-fonts.css" rel="stylesheet">');
 
     $("#fonts .scroller").append($("<div>",{
       class: "flexBox"
@@ -97,8 +85,26 @@ $.ajax({
     }
 
     logSuccess("Loaded all previews!");
-  },
-  error: function() {
-    logError("Problem loading fonts. Please check your function.")
-  }
-})
+    return data;
+  })
+  .then(res => {
+    $(".scrollerWrap.body.notLoaded").animate({
+      "opacity": "1"
+    }, 500);
+      loaded = true;
+      endLoad();
+  })
+  .catch(err => {
+    logError("Problem loading fonts. Please check your function");
+    logError(err);
+  })
+
+// $.ajax({
+//   url: "https://www.themonster.xyz/styles/fancy-fonts.css",
+//   dataType: "text",
+//   success: function(data) {
+//   },
+//   error: function() {
+//     logError("Problem loading fonts. Please check your function.")
+//   }
+// })

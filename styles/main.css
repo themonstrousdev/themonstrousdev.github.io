@@ -147,10 +147,16 @@ body {
   height: 100%;
 }
 
-.scrollerWrap.body {
+.scrollerWrap.notLoaded {
+  opacity: 0;
+}
+
+#content {
+  position: absolute;
+  overflow: hidden;
   top: 18vh;
   height: 82vh;
-  display: none;
+  width: 100%;
 }
 
 .scroller {
@@ -701,12 +707,25 @@ ol li:nth-of-type(n+10)::before {
 
 
 #loading {
-  position: fixed;
-  height: 100vh;
-  width: 100vw;
+  position: absolute;
+  height: 100%;
+  width: 100%;
   top: 0;
   left: 0;
   background: #111;
+}
+
+#content #loading {
+  animation: fadeIn .5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 #load {

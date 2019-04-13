@@ -141,7 +141,8 @@
       "preview": "https://i.imgur.com/UfjJYGg.jpg"
     }
   ],
-  "free": [{
+  "free": [
+    {
       "name": "Laplace<br>[heavily inspired by Laplace Me mobile game]",
       "background": "https://i.imgur.com/QeevzW3.jpg",
       "preview": "https://i.imgur.com/nrXuZsj.gif",
@@ -268,7 +269,8 @@
       "code": "https://pastebin.com/raw/zRSeEj5y"
     }
   ],
-  "raffle": [{
+  "raffle": [
+    {
       "name": "Flame",
       "background": "https://i.imgur.com/m5pdFI3.png",
       "preview": "https://i.imgur.com/hLUhEGq.gif"
