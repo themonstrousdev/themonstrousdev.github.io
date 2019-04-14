@@ -1,5 +1,9 @@
 function showRP() {
-  fetch("https://www.themonster.xyz/src/rp-profile.html")
+  if($("#background").html() != "") {
+    
+    return;
+  } else {
+    fetch("https://www.themonster.xyz/src/rp-profile.html")
     .then(res => {
       return res.text()
     })
@@ -7,18 +11,20 @@ function showRP() {
       var cut = text.search("/script") + 8,
       html = text.slice(cut);
 
-      $("<div>", {
-        id: "background",
-        html: html
-      }).insertBefore("script:first-of-type");
+      $("#background").append(html);
+      document.getElementById("exitProfile").onclick = function() {
+        removeRP()
+      }
     })
+  }
+  setTimeout(function(){
+    $("#choose").fadeOut(200);
+    $("#background").fadeIn(200);
+  }, 200)
 }
 
 function removeRP() {
   $("#background").fadeOut(200);
-  setTimeout(() => {
-    $("#background").remove();
-  }, 200);
 }
 
 $(document).ready(()=>{
@@ -42,9 +48,13 @@ $(document).ready(()=>{
 
   $("#rp.choice__prof").click(()=>{
     showRP();
+    $("#chooseProfile").fadeOut(200);
+    setTimeout(function(){
+      $("#chooseProfile").remove();
+    }, 200);
   })
 
-  $("#exitProfile").click(()=> {
-    removeRP();
+  $("#showRP").click(()=>{
+    showRP();
   })
 })
