@@ -186,6 +186,7 @@ h1.header {
   font-size: 3vw;
   color: #ddd;
   margin: 0;
+  text-transform: lowercase;
   padding: 1vh 2vw 2vh 2vw;
   border-top: .2vh solid currentColor;
   border-bottom: .2vh solid currentColor;
