@@ -186,17 +186,12 @@ h1.header {
   font-size: 3vw;
   color: #ddd;
   margin: 0;
-  text-transform: lowercase;
   padding: 1vh 2vw 2vh 2vw;
   border-top: .2vh solid currentColor;
   border-bottom: .2vh solid currentColor;
   width: fit-content;
   margin-left: 50%;
   transform: translateX(-50%);
-}
-
-h1.header span {
-  font-family: "Nightmare Pills", sans-serif;
 }
 
 .emph {
