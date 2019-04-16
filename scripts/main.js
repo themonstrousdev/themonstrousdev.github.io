@@ -55,7 +55,7 @@ function getData(tab) {
     }, 100);
 
     if(tab) {
-      history.pushState("", "", `${tab != "home"?tab:null}`)
+      history.pushState("", "", `${tab != "home"?tab:""}`)
     }
     $("#content").html(html);
   });
@@ -114,6 +114,6 @@ $(document).ready(()=>{
 });
 
 $(window).on("load", ()=>{
-  getData();
+  getData($("#content").attr("open-tab"));
   endLoad();
 });
