@@ -40,12 +40,12 @@ function getData(tab) {
     if(body.reqScript == null) {
       loaded = true;
     }
-    
+
     setTimeout(()=>{
       if(body.reqScript != null) {
         $('body').append(function() {
           return $("<script>", {
-            id: `${currentTab}-script`,
+            id: `${tab}-script`,
             src: body.reqScript
           });
         })
