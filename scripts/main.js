@@ -37,6 +37,23 @@ function getData(tab) {
   }).then(function(text) {
     var cut = text.search("/script") + 8,
     html = text.slice(cut);
+    if(body.reqScript == null) {
+      loaded = true;
+    }
+    
+    setTimeout(()=>{
+      if(body.reqScript != null) {
+        $('body').append(function() {
+          return $("<script>", {
+            id: `${currentTab}-script`,
+            src: body.reqScript
+          });
+        })
+      } else {
+        $("script[id*='-script']").remove();
+      }
+    }, 100);
+
     if(tab) {
       history.pushState("", "", `${tab != "home"?tab:null}`)
     }
@@ -73,21 +90,6 @@ $(document).ready(()=>{
 
     setTimeout(() => {
       getData(currentTab);
-      if(body.reqScript == null) {
-        loaded = true;
-      }
-      setTimeout(()=>{
-        if(body.reqScript != null) {
-          $('body').append(function() {
-            return $("<script>", {
-              id: `${currentTab}-script`,
-              src: body.reqScript
-            });
-          })
-        } else {
-          $("script[id*='-script']").remove();
-        }
-      }, 100);
     }, 300);
 
     function checkLoad() {
