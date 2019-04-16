@@ -37,8 +37,8 @@ function getData(tab) {
   }).then(function(text) {
     var cut = text.search("/script") + 8,
     html = text.slice(cut);
-    if(tab && tab != "home") {
-      history.pushState("", "", `${tab}`)
+    if(tab) {
+      history.pushState("", "", `${tab != "home"?tab:null}`)
     }
     $("#content").html(html);
   });
