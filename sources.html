@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>The Monster Layouts</title>
+  <meta property="og:url" content="https://www.themonster.xyz"> 
+  <meta property="og:title" content="The Monster | Other Sources">
+  <meta property="og:description"
+    content="The Monster Layouts are showcases an array of layouts that can be used for character profiles in roleplaying games. Moreover, the developer behind it accepts commissions for website development on a front-end scale--from personal portfolios, personal use, to commercial websites.">
+  <meta property="og:image" content="https://www.themonster.xyz/assets/main-logo.png">
+  <link rel="shortcut icon" type="image/x-icon" href="./assets/icon.png"> 
+  <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="./scripts/waitForImages.js"></script>
+  <link rel="stylesheet" href="./styles/main.css">
+  <link href="./styles/fancy-fonts.css" rel="stylesheet">
+  <link href="./styles/google-fonts.css" rel="stylesheet">
+</head>
+<body>
+<div class="texture"></div>
+<div id="header">
+  <div class="unset-style logo ghost home" opens="home"></div>
+  <div class="headerBar flex row">
+    <div class="unset-style button" opens="updates">Updates</div>
+    <span>|</span>
+    <div class="unset-style button" opens="info">Information</div>
+    <span>|</span>
+    <div class="unset-style button" opens="list" script="list">List</div>
+    <span>|</span>
+    <div class="unset-style button" opens="gallery" script="gallery">Gallery</div>
+    <span>|</span>
+    <div class="unset-style button" opens="fonts" script="fonts">Fonts</div>
+    <span>|</span>
+    <div class="unset-style button" opens="sources">Other Sources</div>
+    <span>|</span>
+    <a href="https://goo.gl/9S8VGb" target="_blank" rel="noopener noreferrer" class="button">Donate</a>
+  </div>
+</div>
+<div id="content" open-tab="sources"></div>
+
+<div id="loading">
+  <div class="texture"></div>
+  <div id="load"></div>
+  <div id="message">. . . Loading Content. . .</div>
+</div>
+  <script src="./scripts/main.js"></script>
+  <script>
+    body = {url: "./src/sources.html"};
+  </script>
+</body>
+</html>
