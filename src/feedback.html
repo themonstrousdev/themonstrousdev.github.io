@@ -1,17 +1,17 @@
 <script>
-    window.location.replace("https://www.themonster.xyz");
-  </script>
+  window.location.replace("https://www.themonster.xyz");
+</script>
+<div id="content" open-tab="feedback">
   <div class="scrollerWrap body" id="feedback">
     <div class="scroller">
-      <h1 class="header">Sorry For the Inconvenience!</h1>
-      <p>
-        The feedback page is currently a work in progress.
-      </p>
-      <p>
-        Monster Layouts will be back soon.
-      </p>
-      <p>
-        <span class="unset-style fRed" opens="home">[Go Home]</span>
-      </p>
+      <img src="https://www.themonster.xyz/assets/logo-white.png" alt="Monster Dev" class="thineLogo">
+      <h1 class="header">Feedback</h1>
+      <form method="POST" action="https://formspree.io/ellexidecodes@gmail.com">
+        <textarea name="message" placeholder="Feedback" required></textarea>
+        <input type="text" name="_gotcha" style="display:none" />
+        <input type="hidden" name="_next" value="./thanks.html" />
+        <button type="submit">Send</button>
+      </form>
     </div>
   </div>
+</div>

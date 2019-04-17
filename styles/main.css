@@ -793,3 +793,44 @@ input[name="submit"] {
 input[name="submit"]:hover {
   opacity: 1;
 }
+
+#feedback form {
+  margin-top: 2vh;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  margin-left: 45%;
+  transform: translateX(-50%);
+}
+
+#feedback textarea {
+  width: 40vw;
+  min-height: 30vh;
+  margin-bottom: 2vh;
+  padding: 3vh;
+  border: .2vh solid rgb(203, 219, 248);
+  background: #f1f1f1;
+  color: #111;
+  font-family: "Share", sans-serif;
+  font-size: 2.7vh;
+}
+
+#feedback button[type="submit"] {
+  width: 16vw;
+  padding: .5vh;
+  background: rgba(255, 255, 255, 0.1);
+  text-align: center;
+  font-family: "Hemera", sans-serif;
+  color: #aaa;
+  text-transform: lowercase;
+  font-size: 4vh;
+  border-radius: 40px;
+  border: none;
+  align-self: center;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+}
+
+#feedback button[type="submit"]:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
