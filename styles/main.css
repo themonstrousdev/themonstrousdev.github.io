@@ -834,3 +834,13 @@ input[name="submit"]:hover {
 #feedback button[type="submit"]:hover {
   background: rgba(255, 255, 255, 0.3);
 }
+
+#feedback textarea:focus,
+#feedback button[type="submit"]:focus {
+  filter: drop-shadow(0 0 1vh #aaa);
+}
+
+#feedback textarea:active,
+#feedback button[type="submit"]:active {
+  outline: none;
+}
