@@ -1,14 +1,6 @@
 {
   "Accomodating": [
     {
-      "name": "Krystal Dragon",
-      "stage": "Visualization",
-      "comment": {
-        "color": "yellow",
-        "text": "pending profile draft approval"
-      }
-    },
-    {
       "name": "Pandora",
       "stage": "Consultation",
       "comment": {
@@ -22,6 +14,15 @@
       "comment": {
         "color": "yellow",
         "text": "acquiring profile information"
+      }
+    }
+  ],
+  "On Hold": [
+    {
+      "name": "Wenzie",
+      "comment": {
+        "color": "yellow",
+        "text": "Waiting for art"
       }
     }
   ],
