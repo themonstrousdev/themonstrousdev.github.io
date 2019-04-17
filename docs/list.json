@@ -9,7 +9,15 @@
       }
     },
     {
-      "name": "Wenzie",
+      "name": "Fantasy",
+      "stage": "Consultation",
+      "comment": {
+        "color": "green",
+        "text": "received profile information"
+      }
+    },
+    {
+      "name": "Aka",
       "stage": "Consultation",
       "comment": {
         "color": "yellow",
@@ -26,10 +34,10 @@
       }
     }
   ],
-  "Waiting List": ["Fantasy", "Aka", "The Icecream Man", "Kama"],
+  "Waiting List": ["The Icecream Man", "Kama"],
   "Pending Payment": [
     {
-      "name": "Rockmane",
+      "name": "Rockman",
       "comment": {
         "color": "red",
         "weight": "bold",
