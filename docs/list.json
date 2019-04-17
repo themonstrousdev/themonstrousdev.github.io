@@ -1,14 +1,6 @@
 {
   "Accomodating": [
     {
-      "name": "Krystal Dragon",
-      "stage": "Visualization",
-      "comment": {
-        "color": "yellow",
-        "text": "pending profile draft approval"
-      }
-    },
-    {
       "name": "Pandora",
       "stage": "Consultation",
       "comment": {
@@ -17,7 +9,15 @@
       }
     },
     {
-      "name": "Wenzie",
+      "name": "Fantaty",
+      "stage": "Consultation",
+      "comment": {
+        "color": "green",
+        "text": "received profile information"
+      }
+    },
+    {
+      "name": "Aka",
       "stage": "Consultation",
       "comment": {
         "color": "yellow",
@@ -25,10 +25,19 @@
       }
     }
   ],
-  "Waiting List": ["Fantasy", "Aka", "The Icecream Man", "Kama"],
+  "On Hold": [
+    {
+      "name": "Wenzie",
+      "comment": {
+        "color": "yellow",
+        "text": "Waiting for art"
+      }
+    }
+  ],
+  "Waiting List": ["The Icecream Man", "Kama"],
   "Pending Payment": [
     {
-      "name": "Rockmane",
+      "name": "Rockman",
       "comment": {
         "color": "red",
         "weight": "bold",

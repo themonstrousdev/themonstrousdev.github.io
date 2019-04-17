@@ -1,4 +1,4 @@
-fetch("https://www.themonster.xyz/docs/list.json")
+fetch(window.location.hostname == "www.themonster.xyz" || window.location.hostname == "localhost" ? "./docs/list.json" : "https://www.themonster.xyz/docs/list.json")
   .then(res => {
     return res.json()
   })
@@ -37,11 +37,11 @@ fetch("https://www.themonster.xyz/docs/list.json")
             html: `<b class="fYellow">${data[`${field}`][i]}</b>`
           }))
         }
-      } else if (field == "Pending Payment") {
+      } else if (field == "Pending Payment" || field == "On Hold") {
         scroller.append($("<ol>", {
-          id: "pending-list"
+          id: `${field == "Pending Payment" ? "pending-payment" : "on-hold"}`
         }));
-        list = $("#pending-list");
+        list = field == "Pending Payment" ? $("#pending-payment") : $("#on-hold");
         for(var i=0;i<length;i++) {
           var name = data[`${field}`][i]['name'],
           comment = data[`${field}`][i]['comment'];

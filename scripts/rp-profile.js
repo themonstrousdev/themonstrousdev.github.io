@@ -1,4 +1,4 @@
-var body = {url: "https://www.themonster.xyz/src/home.html"}, loaded = false, loader;
+var body = {url: "https://www.themonster.xyz/src/rp-home.html"}, loaded = false, loader;
 
 function showRP() {
   if($("#background").html() != "") {
