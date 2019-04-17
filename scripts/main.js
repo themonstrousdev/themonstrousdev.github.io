@@ -1,4 +1,4 @@
-var body = {url: "https://www.themonster.xyz/src/home.html"}, loaded = false, loader;
+var body = {url: "./src/home.html"}, loaded = false, loader;
 
 function logError(text) {
   console.log("%c[ERROR]: %c" + text, "color: red; font-weight: bold;font-family: monospace", "color: black; font-family: monospace");
@@ -30,13 +30,33 @@ function endLoad() {
   }, 200);
 }
 
-function getData() {
+function getData(tab) {
   fetch(body.url)
   .then(function(response) {
     return response.text();
   }).then(function(text) {
     var cut = text.search("/script") + 8,
     html = text.slice(cut);
+    if(body.reqScript == null) {
+      loaded = true;
+    }
+
+    setTimeout(()=>{
+      if(body.reqScript != null) {
+        $('body').append(function() {
+          return $("<script>", {
+            id: `${tab}-script`,
+            src: body.reqScript
+          });
+        })
+      } else {
+        $("script[id*='-script']").remove();
+      }
+    }, 100);
+
+    if(tab) {
+      history.pushState("", "", `${tab != "home"?tab:""}`)
+    }
     $("#content").html(html);
   });
 }
@@ -49,10 +69,7 @@ $(document).ready(()=>{
     id: "tooltips"
   }));
 
-
-  
-
-  $(".headerBar .button, .logo.home").click(function(){
+  $("body").on("click", ".unset-style", function(){
     if(currentTab == $(this).attr("opens")) {
       return;
     }
@@ -62,8 +79,8 @@ $(document).ready(()=>{
     loaded = false;
     clearTimeout(loader);
     body = {
-      url: `https://www.themonster.xyz/src/${currentTab}.html`,
-      reqScript: script?`https://www.themonster.xyz/scripts/${script}.js`:null
+      url: `./src/${currentTab}.html`,
+      reqScript: script?`./scripts/${script}.js`:null
     }
 
     $(`.scrollerWrap.body:not(#${currentTab})`).fadeOut(200);
@@ -72,22 +89,7 @@ $(document).ready(()=>{
     }, 200);
 
     setTimeout(() => {
-      getData();
-      if(body.reqScript == null) {
-        loaded = true;
-      }
-      setTimeout(()=>{
-        if(body.reqScript != null) {
-          $('body').append(function() {
-            return $("<script>", {
-              id: `${currentTab}-script`,
-              src: body.reqScript
-            });
-          })
-        } else {
-          $("script[id*='-script']").remove();
-        }
-      }, 100);
+      getData(currentTab);
     }, 300);
 
     function checkLoad() {
@@ -112,6 +114,6 @@ $(document).ready(()=>{
 });
 
 $(window).on("load", ()=>{
-  getData();
+  getData($("#content").attr("open-tab"));
   endLoad();
 });

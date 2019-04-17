@@ -780,3 +780,16 @@ ol li:nth-of-type(n+10)::before {
 #gallOverlay #message:hover {
   color: var(--blurple);
 }
+
+input:active, input:focus {
+  outline: none;
+}
+
+input[name="submit"] {
+  opacity: 0.5;
+  transition: all .2s ease-in-out;
+}
+
+input[name="submit"]:hover {
+  opacity: 1;
+}

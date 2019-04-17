@@ -15,7 +15,7 @@ fetch("https://www.themonster.xyz/styles/fancy-fonts.css")
     }
 
 
-    $("textarea#google-fonts-link").text('link href="https://www.themonster.xyz/styles/google-fonts.css" rel="stylesheet">')
+    $("textarea#google-fonts-link").text('<link href="https://www.themonster.xyz/styles/google-fonts.css" rel="stylesheet">')
     $("textarea#fancy-fonts-link").text('<link href="https://www.themonster.xyz/styles/fancy-fonts.css" rel="stylesheet">');
 
     $("#fonts .scroller").append($("<div>",{
