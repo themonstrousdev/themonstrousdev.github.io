@@ -135,6 +135,7 @@ $("#feedback button[type=submit]").click(()=>{
       $("span.green.reply").fadeOut(200);
     }, 1000);
   });
+  
   fetchData();
 
   return false;
