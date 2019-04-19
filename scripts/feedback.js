@@ -14,17 +14,17 @@ fetch("https://getsimpleform.com/messages.json?api_token=c3d5d9499780701b4ce8745
         
         $("<div>", {
           class: "commentContainer"
-        }).appendTo("#comments");
+        }).prependTo("#comments");
 
         $("<div>", {
           class: "sender",
           html: `${sender == ""?"Anonymous":sender} <span>${date}</span>`
-        }).appendTo("#comments .commentContainer:last-child");
+        }).appendTo("#comments .commentContainer:first-child");
 
         $("<div>", {
           class: "message",
           html: message
-        }).appendTo("#comments .commentContainer:last-child");
+        }).appendTo("#comments .commentContainer:first-child");
       }
     }
 
