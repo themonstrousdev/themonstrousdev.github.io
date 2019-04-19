@@ -125,16 +125,18 @@ $("#feedback button[type=submit]").click(()=>{
       message: message
     }
   }).done(function() {
-    $("<span>", {
+    $("<b>", {
       class: "green reply",
       style: "text-align: center",
       html: "Feedback sent!"
     }).insertBefore("#feedback form");
 
     setTimeout(() => {
-      $("span.green.reply").fadeOut(200);
+      $("b.green.reply").fadeOut(200);
     }, 1000);
   });
+
+  $("[name=sender], [name=email], [name=message]")
 
   setTimeout(() => {
     fetchData();
