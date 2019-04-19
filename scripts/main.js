@@ -1,6 +1,10 @@
 var body = {url: "./src/home.html"}, loaded = false, loader, prevPage = [], prevScript = [], content = $("#content"),
 currentTab = content.attr("open-tab");
 
+var momentjs = document.createElement("script");
+momentjs.src = "https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js";
+document.head.appendChild(momentjs)
+
 function logError(text) {
   console.log("%c[ERROR]: %c" + text, "color: red; font-weight: bold;font-family: monospace", "color: black; font-family: monospace");
 }

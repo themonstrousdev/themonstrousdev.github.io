@@ -859,3 +859,34 @@ input[name="submit"]:hover {
   width: 20vw;
   transition: all .2s ease-in-out;
 }
+
+#comments {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  margin-top: 1vh;
+}
+
+.commentContainer {
+  flex: 1 1 auto;
+  margin-bottom: 3vh;
+}
+
+.commentContainer .sender {
+  font-weight: bolder;
+  font-size: 2.7vh;
+  margin: 0 2vh;
+  padding: 0 0 2vh 2vh;
+  border-bottom: .2vh dotted currentColor;
+}
+
+.commentContainer .sender span {
+  font-weight: initial;
+  font-style: italic;
+  opacity: 0.8;
+}
+
+.commentContainer .message {
+  margin: 1vh 2vh;
+  padding: 2vh;
+}
