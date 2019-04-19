@@ -132,6 +132,8 @@ $("#feedback button[type=submit]").click(()=>{
     }).insertBefore("#feedback form");
 
     $("[name=message]").css("box-shadow", "box-shadow: 0 0 1vh var(--red);");
+
+    return;
   }
 
   $.ajax({
@@ -157,7 +159,7 @@ $("#feedback button[type=submit]").click(()=>{
     }, 1000);
   });
 
-  $("[name=sender], [name=email], [name=message]")
+  $("[name=sender], [name=email], [name=message]").val("");
 
   setTimeout(() => {
     fetchData();
