@@ -23,7 +23,7 @@ fetch(window.location.hostname == "www.themonster.xyz" || window.location.hostna
           comment = data[`${field}`][i]['comment'];
 
           list.append($("<li>", {
-            html: `<b class="fGreen">${name}</b> - <b>${stage}</b> - <span class="${comment.color}">${comment.text}</span>`
+            html: `<b class="fGreen">${name}</b> - <b>${stage}</b> ${comment.text != "" ? `- <span class="${comment.color}">${comment.text}</span>` :null}`
           }))
         }
       } else if (field == "Waiting List") {
