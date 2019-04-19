@@ -1,7 +1,6 @@
 var previousData = null;
 
 function processComments(data) {
-  var i;
   if(!previousData) {
     previousData = data;
     appendComments(previousData);
@@ -15,6 +14,7 @@ function processComments(data) {
 }
 
 function appendComments(data) {
+  var i;
   if (data.length == 0) {
     $("#feedback #comments").append("<h2 style='padding: 0; text-align: center; font-family: Hemera, sans-serif; text-transform: lowercase;font-size: 2vw;'>No one has left feedback yet! Be the first one.</h2>");
   } else {
@@ -135,8 +135,10 @@ $("#feedback button[type=submit]").click(()=>{
       $("span.green.reply").fadeOut(200);
     }, 1000);
   });
-  
-  fetchData();
+
+  setTimeout(() => {
+    fetchData();
+  }, 500);
 
   return false;
 });
