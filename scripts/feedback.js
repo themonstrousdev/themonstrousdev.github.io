@@ -118,7 +118,7 @@ $("#feedback button[type=submit]").click(()=>{
 
   $.ajax({
     dataType: 'jsonp',
-    url: "http://getsimpleform.com/messages/ajax?form_api_token=7d9c26e78cee5187a4f70d084223f5a5",
+    url: "https://getsimpleform.com/messages/ajax?form_api_token=7d9c26e78cee5187a4f70d084223f5a5",
     data: {
       sender: sender,
       email: email,
