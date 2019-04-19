@@ -816,7 +816,7 @@ input[name="submit"]:hover {
   transition: all .2s ease-in-out;
 }
 
-#feedback button[type="submit"] {
+#feedback button {
   width: 16vw;
   padding: .5vh;
   background: rgba(255, 255, 255, 0.1);
@@ -832,18 +832,18 @@ input[name="submit"]:hover {
   transition: all .2s ease-in-out;
 }
 
-#feedback button[type="submit"]:hover {
+#feedback button:hover {
   background: rgba(255, 255, 255, 0.3);
 }
 
 #feedback textarea:focus,
-#feedback button[type="submit"]:focus,
+#feedback button:focus,
 #feedback input:focus {
   box-shadow: 0 0 1vh #aaa;
 }
 
 #feedback textarea:active,
-#feedback button[type="submit"]:active,
+#feedback button:active,
 #feedback input:active {
   outline: none;
 }

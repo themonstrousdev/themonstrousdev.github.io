@@ -114,5 +114,29 @@ function fetchData() {
 fetchData();
 
 $("#feedback button[type=submit]").click(()=>{
+  var sender = $("[name=sender]").val(),
+  email = $("[name=email]").val(),
+  message = $("[name=message]").val();
+
+  $.ajax({
+    dataType: 'jsonp',
+    url: "http://getsimpleform.com/messages/ajax?form_api_token=7d9c26e78cee5187a4f70d084223f5a5",
+    data: {
+      sender: sender,
+      email: email,
+      message: message
+    }
+  }).done(function() {
+    $("<span>", {
+      class: "green reply",
+      style: "text-align: center",
+      html: "Feedback sent!"
+    }).insertBefore("#feedback form");
+
+    setTimeout(() => {
+      $("span.green.reply").fadeOut(200);
+    }, 1000);
+  });
+
   fetchData();
 });
