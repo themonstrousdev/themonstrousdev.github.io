@@ -43,8 +43,6 @@ function appendComments(data) {
     scrollerPos = $(".scroller").offset(),
     scrollInner = $(".scroller").innerHeight();
 
-    console.log(formPos.top > scrollerPos.top+scrollInner);
-
     function scrollToFeedback(scroll) {
       $(".scroller").animate({
         scrollTop: scroll
