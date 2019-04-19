@@ -1,4 +1,5 @@
-var body = {url: "./src/home.html"}, loaded = false, loader;
+var body = {url: "./src/home.html"}, loaded = false, loader, prevPage = [], prevScript = [], content = $("#content"),
+currentTab = content.attr("open-tab");
 
 function logError(text) {
   console.log("%c[ERROR]: %c" + text, "color: red; font-weight: bold;font-family: monospace", "color: black; font-family: monospace");
@@ -55,32 +56,78 @@ function getData(tab) {
     }, 100);
 
     if(tab) {
-      history.pushState("", "", `${tab != "home"?tab:""}`)
+      history.pushState("", "", `${tab != "home"?tab:"/"}`)
     }
     $("#content").html(html);
   });
 }
 
-$(document).ready(()=>{
-  var content = $("#content"),
-  currentTab = content.attr("open-tab");
+$("body").append($("<div />", {
+  id: "tooltips"
+}));
 
-  $("body").append($("<div />", {
-    id: "tooltips"
-  }));
+$("body").on("click", ".unset-style", function(){
+  if(currentTab == $(this).attr("opens")) {
+    return;
+  }
+  var elem = $(this),
+  script = elem.attr("script"),
+  url = window.location.href,
+  lastSlash = url.includes("/") ? url.lastIndexOf("/") : null;
 
-  $("body").on("click", ".unset-style", function(){
-    if(currentTab == $(this).attr("opens")) {
-      return;
-    }
-    var elem = $(this),
-    script = elem.attr("script");
-    currentTab = elem.attr("opens");
+  lastSlash && lastSlash != url.length - 1 ? prevPage.push(url.slice(lastSlash + 1)) : prevPage.push("home");
+  prevScript.push(body.reqScript);
+
+  currentTab = elem.attr("opens");
+  loaded = false;
+  clearTimeout(loader);
+  body = {
+    url: `./src/${currentTab}.html`,
+    reqScript: script?`./scripts/${script}.js`:null
+  }
+
+  $(`.scrollerWrap.body:not(#${currentTab})`).fadeOut(200);
+  setTimeout(function(){
+    $(`.scrollerWrap.body:not(#${currentTab})`).remove();
+  }, 200);
+
+  setTimeout(() => {
+    getData(currentTab);
+  }, 300);
+
+  function checkLoad() {
+    if ( loaded ) {
+      if($("body").find("#loading").length > 0) {
+        endLoad();
+      }
+    } else if (!loaded) {
+      if($("body").find("#loading").length == 0) {
+        showLoading();
+        console.log(currentTab);
+      }
+      setTimeout(checkLoad, 100);
+    };
+  }
+
+  loader = setTimeout(() => {
+    checkLoad();
+  }, 2000);
+
+});
+
+$(window).on("load", ()=>{
+  getData($("#content").attr("open-tab"));
+  endLoad();
+});
+
+$(window).on("popstate", function(e) {
+  if(prevPage.length > 0) {
+    currentTab = prevPage[prevPage.length - 1];
     loaded = false;
     clearTimeout(loader);
     body = {
       url: `./src/${currentTab}.html`,
-      reqScript: script?`./scripts/${script}.js`:null
+      reqScript: prevScript[prevScript.length - 1]
     }
 
     $(`.scrollerWrap.body:not(#${currentTab})`).fadeOut(200);
@@ -110,10 +157,9 @@ $(document).ready(()=>{
       checkLoad();
     }, 2000);
 
-  });
-});
-
-$(window).on("load", ()=>{
-  getData($("#content").attr("open-tab"));
-  endLoad();
-});
+    prevPage.pop();
+    prevScript.pop();
+  } else {
+    window.history.back();
+  }
+})
