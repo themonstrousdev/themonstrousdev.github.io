@@ -133,7 +133,7 @@ $("#feedback button[type=submit]").click(()=>{
 
     $("[name=message]").css("box-shadow", "box-shadow: 0 0 1vh var(--red);");
 
-    return;
+    return false;
   }
 
   $.ajax({
