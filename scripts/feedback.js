@@ -25,17 +25,17 @@ function appendComments(data) {
       
       $("<div>", {
         class: "commentContainer"
-      }).prependTo("#comments");
+      }).appendTo("#comments");
 
       $("<div>", {
         class: "sender",
         html: `${sender == ""?"Anonymous":sender} <span>${date}</span>`
-      }).appendTo("#comments .commentContainer:first-child");
+      }).appendTo("#comments .commentContainer:last-child");
 
       $("<div>", {
         class: "message",
         html: message
-      }).appendTo("#comments .commentContainer:first-child");
+      }).appendTo("#comments .commentContainer:last-child");
     }
   }
 
