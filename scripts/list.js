@@ -23,7 +23,7 @@ fetch(window.location.hostname == "www.themonster.xyz" || window.location.hostna
           comment = data[`${field}`][i]['comment'];
 
           list.append($("<li>", {
-            html: `<b class="fGreen">${name}</b> - <b>${stage}</b> ${comment.text != "" ? `- <span class="${comment.color}">${comment.text}</span>` :null}`
+            html: `<b class="fGreen">${name}</b> - <b>${stage}</b>${comment.text != "" ? ` - <span class="${comment.color}">${comment.text}</span>` :""}`
           }))
         }
       } else if (field == "Waiting List") {
@@ -47,7 +47,7 @@ fetch(window.location.hostname == "www.themonster.xyz" || window.location.hostna
           comment = data[`${field}`][i]['comment'];
 
           list.append($("<li>", {
-            html: `<b class="greyple">${name}</b>${comment.text==""?null : comment.weight == "bold" ? ` - <b class="${comment.color}">${comment.text}</b>`:` - <span class="${comment.color}">${comment.text}</span>`}`
+            html: `<b class="greyple">${name}</b>${comment.text==""?"": comment.weight == "bold" ? ` - <b class="${comment.color}">${comment.text}</b>`:` - <span class="${comment.color}">${comment.text}</span>`}`
           }))
         }
       } else {
