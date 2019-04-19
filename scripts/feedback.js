@@ -5,31 +5,26 @@ fetch("https://getsimpleform.com/messages.json?api_token=c3d5d9499780701b4ce8745
   .then(data => {
     var i;
     if (data.length == 0) {
-      $("#feedback .scroller").append("<h2 style='padding: 0; text-align: center'>No one has left a feedback yet! Be the first one.</h2>");
+      $("#feedback #comments").append("<h2 style='padding: 0; text-align: center'>No one has left a feedback yet! Be the first one.</h2>");
     } else {
-
-      $("<div>", {
-        id: "comments"
-      }).appendTo("#feedback .scroller");
-
       for(i = 0; i < data.length; i++) {
-        var date = data[i]["created_at"].format("YYYY-MM-DD hh:mm A Z"),
+        var date = moment(data[i]["created_at"]).format("LLL"),
         sender = data[i]["data"].sender,
         message = data[i]["data"].message;
-
+        
         $("<div>", {
           class: "commentContainer"
         }).appendTo("#comments");
 
         $("<div>", {
           class: "sender",
-          html: `${sender} <span>${date}</span>`
-        }).appendTo("#comments commentContainer:last-child");
+          html: `${sender == ""?"Anonymous":sender} <span>${date}</span>`
+        }).appendTo("#comments .commentContainer:last-child");
 
         $("<div>", {
           class: "message",
           html: message
-        }).appendTo("#comments commentContainer:last-child");
+        }).appendTo("#comments .commentContainer:last-child");
       }
     }
   })

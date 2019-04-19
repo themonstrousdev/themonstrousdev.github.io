@@ -864,7 +864,7 @@ input[name="submit"]:hover {
   display: flex;
   flex-flow: column wrap;
   justify-content: flex-start;
-  margin-top: 1vh;
+  margin-top: 6vh;
 }
 
 .commentContainer {
@@ -884,6 +884,7 @@ input[name="submit"]:hover {
   font-weight: initial;
   font-style: italic;
   opacity: 0.8;
+  font-size: 2vh;
 }
 
 .commentContainer .message {
