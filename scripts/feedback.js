@@ -5,7 +5,7 @@ fetch("https://getsimpleform.com/messages.json?api_token=c3d5d9499780701b4ce8745
   .then(data => {
     var i;
     if (data.length == 0) {
-      $("#feedback #comments").append("<h2 style='padding: 0; text-align: center'>No one has left a feedback yet! Be the first one.</h2>");
+      $("#feedback #comments").append("<h2 style='padding: 0; text-align: center; font-family: Hemera, sans-serif; text-transform: lowercase;'>No one has left a feedback yet! Be the first one.</h2>");
     } else {
       for(i = 0; i < data.length; i++) {
         var date = moment(data[i]["created_at"]).format("LLL"),
