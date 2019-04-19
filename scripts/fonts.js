@@ -99,13 +99,3 @@ fetch("https://www.themonster.xyz/styles/fancy-fonts.css")
     logError("Problem loading fonts. Please check your function");
     logError(err);
   })
-
-// $.ajax({
-//   url: "https://www.themonster.xyz/styles/fancy-fonts.css",
-//   dataType: "text",
-//   success: function(data) {
-//   },
-//   error: function() {
-//     logError("Problem loading fonts. Please check your function.")
-//   }
-// })

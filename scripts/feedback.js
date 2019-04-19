@@ -27,4 +27,22 @@ fetch("https://getsimpleform.com/messages.json?api_token=c3d5d9499780701b4ce8745
         }).appendTo("#comments .commentContainer:last-child");
       }
     }
+
+    return data
+  })
+  .then(res => {
+    var container = $(".scrollerWrap.body.notLoaded");
+    container.waitForImages(()=>{
+      container.animate({
+        "opacity": "1",
+      }, 200);
+      setTimeout(() => {
+        container.css("pointer-events", "all");
+      }, 200);
+      loaded = true;
+    })
+      endLoad();
+  })
+  .catch(err => {
+    logError(err);
   })
