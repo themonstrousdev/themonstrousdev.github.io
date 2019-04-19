@@ -840,6 +840,7 @@ input[name="submit"]:hover {
 #feedback button:focus,
 #feedback input:focus {
   box-shadow: 0 0 1vh #aaa;
+  outline: none;
 }
 
 #feedback textarea:active,
