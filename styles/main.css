@@ -807,12 +807,13 @@ input[name="submit"]:hover {
   width: 40vw;
   min-height: 30vh;
   margin-bottom: 2vh;
-  padding: 3vh;
+  padding: 2vh;
   border: .2vh solid rgb(203, 219, 248);
   background: #f1f1f1;
   color: #111;
   font-family: "Share", sans-serif;
-  font-size: 2.7vh;
+  font-size: 2.5vh;
+  transition: all .2s ease-in-out;
 }
 
 #feedback button[type="submit"] {
@@ -836,11 +837,25 @@ input[name="submit"]:hover {
 }
 
 #feedback textarea:focus,
-#feedback button[type="submit"]:focus {
-  filter: drop-shadow(0 0 1vh #aaa);
+#feedback button[type="submit"]:focus,
+#feedback input:focus {
+  box-shadow: 0 0 1vh #aaa;
 }
 
 #feedback textarea:active,
-#feedback button[type="submit"]:active {
+#feedback button[type="submit"]:active,
+#feedback input:active {
   outline: none;
+}
+
+#feedback input {
+  margin-bottom: 2vh;
+  padding: 1vh 2vh;
+  border: .2vh solid rgb(203, 219, 248);
+  background: #f1f1f1;
+  color: #111;
+  font-family: "Share", sans-serif;
+  font-size: 2.5vh;
+  width: 20vw;
+  transition: all .2s ease-in-out;
 }
