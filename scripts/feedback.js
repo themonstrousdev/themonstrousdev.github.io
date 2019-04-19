@@ -116,6 +116,24 @@ $("#feedback button[type=submit]").click(()=>{
   email = $("[name=email]").val(),
   message = $("[name=message]").val();
 
+  if($("b.red.reply")) {
+    $("b.red.reply").fadeOut(200);
+    setTimeout(() => {
+      $("b.red.reply").remove();
+    }, 200);
+    $("[name=message]").removeAttr("style");
+  }
+
+  if(message == "" || message == null) {
+    $("<b>", {
+      class: "red reply",
+      style: "text-align: center",
+      html: "Please enter feedback"
+    }).insertBefore("#feedback form");
+
+    $("[name=message]").css("box-shadow", "box-shadow: 0 0 1vh var(--red);");
+  }
+
   $.ajax({
     dataType: 'jsonp',
     url: "https://getsimpleform.com/messages/ajax?form_api_token=7d9c26e78cee5187a4f70d084223f5a5",
@@ -133,6 +151,9 @@ $("#feedback button[type=submit]").click(()=>{
 
     setTimeout(() => {
       $("b.green.reply").fadeOut(200);
+      setTimeout(() => {
+        $("b.green.reply").remove();
+      }, 200);
     }, 1000);
   });
 
