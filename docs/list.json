@@ -1,14 +1,6 @@
 {
   "Accomodating": [
     {
-      "name": "Pandora",
-      "stage": "Compression",
-      "comment": {
-        "color": "",
-        "text": ""
-      }
-    },
-    {
       "name": "Fantasy",
       "stage": "Consultation",
       "comment": {
@@ -18,6 +10,14 @@
     },
     {
       "name": "Aka",
+      "stage": "Consultation",
+      "comment": {
+        "color": "yellow",
+        "text": "acquiring profile information"
+      }
+    },
+    {
+      "name": "The Icecream Man",
       "stage": "Consultation",
       "comment": {
         "color": "yellow",
@@ -34,7 +34,7 @@
       }
     }
   ],
-  "Waiting List": ["The Icecream Man", "Kama"],
+  "Waiting List": ["Kama"],
   "Pending Payment": [
     {
       "name": "Rockman",
@@ -42,6 +42,13 @@
         "color": "red",
         "weight": "bold",
         "text": "delayed payment"
+      }
+    },
+    {
+      "name": "Pandora",
+      "comment": {
+        "color": "yellow",
+        "text": "pending payment"
       }
     }
   ]
