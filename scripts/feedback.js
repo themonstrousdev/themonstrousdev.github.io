@@ -117,10 +117,10 @@ $("#feedback button[type=submit]").click(()=>{
   message = $("[name=message]").val();
 
   if($("b.red.reply")) {
-    $("b.red.reply").fadeOut(200);
+    $("b.red.reply").fadeOut(500);
     setTimeout(() => {
       $("b.red.reply").remove();
-    }, 200);
+    }, 500);
     $("[name=message]").removeAttr("style");
   }
 
@@ -152,10 +152,10 @@ $("#feedback button[type=submit]").click(()=>{
     }).insertBefore("#feedback form");
 
     setTimeout(() => {
-      $("b.green.reply").fadeOut(200);
+      $("b.green.reply").fadeOut(500);
       setTimeout(() => {
         $("b.green.reply").remove();
-      }, 200);
+      }, 500);
     }, 1000);
   });
 
