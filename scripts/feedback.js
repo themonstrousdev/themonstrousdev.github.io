@@ -28,6 +28,52 @@ fetch("https://getsimpleform.com/messages.json?api_token=c3d5d9499780701b4ce8745
       }
     }
 
+    var formPos = $("form").offset(),
+      scrollerPos = $(".scroller").offset(),
+      scrollInner = $(".scroller").innerHeight();
+
+      console.log(formPos.top > scrollerPos.top+scrollInner);
+
+      function scrollToFeedback(scroll) {
+        $(".scroller").animate({
+          scrollTop: scroll
+        }, 500, "swing");
+      }
+
+      if(formPos.top > scrollerPos.top+scrollInner) {
+        $("#content").append($("<div>", {
+          class: "toFeedback",
+          html: "Give Feedback",
+          click: function() {
+            scrollToFeedback(formPos.top);
+          }
+        }));
+      }
+
+      $(".scroller").scroll(function(){
+        var btn = $("#content").find(".toFeedback").length;
+        formPos = $("form").offset();
+        if(formPos.top > scrollerPos.top+scrollInner) {
+          if(btn == 0) {
+            $("#content").append($("<div>", {
+              class: "toFeedback",
+              html: "Give Feedback",
+              click: function() {
+                scrollToFeedback(formPos.top);
+              }
+            }));
+          } 
+        } else {
+          if(btn > 0) {
+            $(".toFeedback").animate({
+              "margin-bottom": "-10vh"
+            }, 200, ()=>{
+              $(".toFeedback").remove();
+            });
+          }
+        }
+      });
+
     return data
   })
   .then(res => {
