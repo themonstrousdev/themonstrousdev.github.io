@@ -7,7 +7,7 @@ document.head.appendChild(momentjs)
 
 $(window).orientationchange(function(e){
   var menu = $("#header .logo.home");
-  console.log(orient);
+  orient = e.orientation;
   if(orient == "portrait") {
     var detach = $("#header").detach();
     detach.insertBefore("#content+*");
@@ -86,7 +86,7 @@ function getData(tab) {
     }, 100);
 
     if(tab) {
-      history.pushState("", "", `${tab != "home"?tab:"/"}`)
+      // history.pushState("", "", `${tab != "home"?tab:"/"}`)
     }
     $("#content").html(html);
   });
