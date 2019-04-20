@@ -134,7 +134,7 @@ $(document).ready(()=>{
     }, 200);
   })
 
-  $("#showRP").click(()=>{
+  $("#showprofile").click(()=>{
     showRP();
   })
 
