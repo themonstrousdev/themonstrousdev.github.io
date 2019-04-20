@@ -1,14 +1,6 @@
 {
   "Accomodating": [
     {
-      "name": "Fantasy",
-      "stage": "Consultation",
-      "comment": {
-        "color": "green",
-        "text": "received profile information"
-      }
-    },
-    {
       "name": "Aka",
       "stage": "Consultation",
       "comment": {
@@ -23,11 +15,21 @@
         "color": "yellow",
         "text": "acquiring profile information"
       }
+    },
+    {
+      "name": "Unoccupied to give allowance for on hold profiles"
     }
   ],
   "On Hold": [
     {
       "name": "Wenzie",
+      "comment": {
+        "color": "yellow",
+        "text": "Waiting for art"
+      }
+    },
+    {
+      "name": "Fantasy",
       "comment": {
         "color": "yellow",
         "text": "Waiting for art"
