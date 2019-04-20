@@ -47,7 +47,7 @@ fetch(window.location.hostname == "www.themonster.xyz" || window.location.hostna
           comment = data[`${field}`][i]['comment'];
 
           list.append($("<li>", {
-            html: `<b class="greyple">${name}</b>${comment?"": comment.weight == "bold" ? ` - <b class="${comment.color}">${comment.text}</b>`:` - <span class="${comment.color}">${comment.text}</span>`}`
+            html: `<b class="greyple">${name}</b>${!comment?"": comment.weight == "bold" ? ` - <b class="${comment.color}">${comment.text}</b>`:` - <span class="${comment.color}">${comment.text}</span>`}`
           }))
         }
       } else {
