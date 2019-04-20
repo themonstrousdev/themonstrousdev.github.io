@@ -111,7 +111,7 @@ body {
   transition: all .2s ease-in-out;
 }
 
-#showRP {
+#showprofile {
   position: absolute;
   bottom: 1vh;
   right: 1vh;
@@ -128,6 +128,40 @@ body {
 }
 
 #exitProfile:hover,
-#showRP:hover {
+#showprofile:hover {
   color: white;
+}
+
+
+@media all and (orientation:portrait) {
+  #content {
+    top: 19vw;
+    height: calc(100% - 23vw);
+  }
+
+  #showprofile {
+    bottom: unset;
+    top: 1vh;
+    font-size: 4vh;
+  }
+
+  #deum {
+    left: -23vw;
+    width: 94vw;
+  }
+
+  #name {
+    left: 42vw;
+    font-size: 21vw;
+  }
+
+  #quote {
+    right: 8vw;
+    font-size: 4.5vw;
+    width: 90vw;
+  }
+
+  #exitProfile {
+    font-size: 4.4vw;
+  }
 }
