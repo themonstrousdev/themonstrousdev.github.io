@@ -38,8 +38,7 @@ $(window).orientationchange();
 
 function showRP() {
   if($("#background").html() != "") {
-    
-    return;
+    // do nothing
   } else {
     fetch("https://www.themonster.xyz/src/rp-profile.html")
     .then(res => {
@@ -55,6 +54,7 @@ function showRP() {
       }
     })
   }
+
   setTimeout(function(){
     $("#choose").fadeOut(200);
     $("#background").fadeIn(200);
