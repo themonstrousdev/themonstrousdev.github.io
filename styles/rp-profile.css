@@ -134,11 +134,6 @@ body {
 
 
 @media all and (orientation:portrait) {
-  #content {
-    top: 19vw;
-    height: calc(100% - 23vw);
-  }
-
   #showprofile {
     bottom: unset;
     top: 1vh;
