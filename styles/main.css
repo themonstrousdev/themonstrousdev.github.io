@@ -251,6 +251,14 @@ h2 {
   text-transform: uppercase;
 }
 
+h2.feedback {
+  padding: 0; 
+  text-align: center; 
+  font-family: "Hemera", sans-serif; 
+  text-transform: lowercase;
+  font-size: 2vw;
+}
+
 ul.bullet {
   list-style-type: disc;
   padding-left: 3vw;
@@ -267,6 +275,7 @@ ul.inner {
 
 ol {
   list-style: none;
+  padding-left: 4vw;
 }
 
 ol li {
@@ -795,11 +804,12 @@ input[name="submit"]:hover {
 }
 
 #feedback form {
+  width: fit-content;
   margin-top: 2vh;
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
-  margin-left: 45%;
+  margin-left: 50%;
   transform: translateX(-50%);
 }
 
@@ -917,4 +927,196 @@ input[name="submit"]:hover {
 
 .toFeedback:hover {
   background: rgba(255, 255, 255, 0.3);
+}
+
+@media all and (orientation:portrait) {
+  #header {
+    top: 0;
+    height: 100%;
+    width: 40vw;
+    transform: translateX(-100%);
+    background: rgba(51, 51, 51, 0.3);
+    transition: all .5s ease-in-out;
+  }
+
+  #headerExit {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,0.8);
+  }
+
+  #header.open {
+    transform: translateX(0);
+  }
+
+  .logo {
+    position: fixed;
+    transform: none;
+    top: 2%;
+    left: 110%;
+    height: 13vw;
+    width: 22vw;
+    transition: left .5s ease-in-out;
+  }
+
+  #header.open .logo {
+    left: 21%;
+  }
+
+  #header.open .logo::after {
+    opacity: 1;
+    transition: all .5s ease-in-out;
+  }
+
+  .headerBar {
+    top: 0;
+    transform: none;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  }
+
+  .headerBar.flex {
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+  }
+
+  .button {
+    font-size: 4vh;
+    text-align: center;
+    height: fit-content;
+    width: 100%;
+    padding: 1.5vh 1vh;
+    background: transparent;
+  }
+
+  .button:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: #aaa;
+  }
+
+  .headerBar .button:first-child {
+    margin-top: 18vw;
+  }
+
+  .headerBar span {
+    display: none;
+  }
+
+  #content {
+    top: 19vw;
+    height: calc(100% - 19vw);
+  }
+
+  img.thineLogo {
+    width: 55vw;
+  }
+
+  h1.header {
+    width: 87vw;
+    font-size: 8vw;
+    text-align: center;
+    padding: 1vh;
+  }
+
+  h2 {
+    font-size: 4.5vw;
+  }
+
+  h2.feedback {
+    font-size: 5vw;
+  }
+
+  .body .scroller>*:not(.header):not(.flexBox) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .item {
+    height: 44vw;
+    width: 78vw;
+  }
+
+  .tooltip {
+    max-width: 72vw;
+  }
+
+  .tooltip:after {
+    border-width: 2vw;
+  }
+
+  #gallOverlay img {
+    max-width: 79vw;
+  }
+
+  .prev, .next {
+    background-size: 8vw;
+  }
+
+  #code .scrollerWrap {
+    bottom: 8vw;
+  }
+
+  #code .choice {
+    margin: 0;
+    border-left: .1vh solid currentColor;
+    border-right: .1vh solid currentColor;
+    padding: 0 1vh;
+  }
+
+  #code h1.announce {
+    position: fixed;
+    top: -15%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: fit-content;
+    font-size: 7vw;
+    font-family: "Hemera", sans-serif;
+    text-transform: lowercase;
+  }
+
+  #fonts textarea {
+    height: 9vh;
+    width: 82vw;
+  }
+
+  .fontContainer {
+    height: 35vw;
+    width: 74vw;
+  }
+
+  .fontName {
+    height: 12vw;
+    font-size: 7vw;
+    line-height: 6vw;
+  }
+
+  .fontPrev {
+    height: 22vw;
+  }
+
+  .fontName span {
+    padding-right: 30vw;
+  }
+
+  .fontName .size {
+    margin: 3.6vw 0;
+  }
+
+  .fontName .size::-webkit-slider-thumb {
+    width: 2vh;
+    height: 2vh;
+  }
+
+  #feedback textarea {
+    width: 86vw;
+  }
+
+  #feedback input {
+    width: 68vw;
+  }
 }

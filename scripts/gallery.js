@@ -1,5 +1,5 @@
 
-var curIndex, images, imageLoaded = false;
+var curIndex, images, imageLoaded = false, showCode = false;
 
 function showImage() {
   $("#gallOverlay #load").fadeOut(200);
@@ -20,6 +20,8 @@ function imgLoader() {
       style: "border: none;transform:translate(-50%, -50%)"
     }).insertBefore("#gallOverlay .next");
     
+    readyImg();
+
     $("<div>", {
       id: "message",
       class: "show-image",
@@ -36,7 +38,6 @@ function readyImg() {
     return;
   }
   if ( document.getElementById("gallOverlay").querySelector("img").complete ) {
-    console.log("Finally loaded.");
     imageLoaded = true;
     showImage();
   } else if (!document.getElementById("gallOverlay").querySelector("img").complete) {
@@ -164,6 +165,10 @@ fetch("https://www.themonster.xyz/docs/profiles.json")
               var tipPosition = $(this).offset();
               var width = $(this).outerWidth();
     
+              if(orient == "portrait") {
+                return;
+              }
+
               $("#tooltips").append($("<div />", {
                 class: `tooltip top`,
                 style: `top: ${tipPosition.top}px; left: ${tipPosition.left + width/2}px`,
@@ -237,7 +242,8 @@ fetch("https://www.themonster.xyz/docs/profiles.json")
               }).appendTo("#gallOverlay .flexBox");
     
               $("<img>", {
-                src: $(this).attr("img")
+                src: $(this).attr("img"),
+                style: "display: none"
               }).appendTo("#gallOverlay .flexBox .imageHolder");
 
               $("<div />", {
@@ -245,8 +251,13 @@ fetch("https://www.themonster.xyz/docs/profiles.json")
                 opens: $(this).attr("code"),
                 html: "<span>View Source</span>",
                 click: function () {
+                  if(showCode) {
+                    return;
+                  }
+
                   var url = $(this).attr("opens");
-    
+
+                  showCode = true;
                   $.ajax({
                     url: url,
                     dataType: 'text',
@@ -259,6 +270,13 @@ fetch("https://www.themonster.xyz/docs/profiles.json")
                         class: "texture"
                       }).appendTo("#code");
     
+                      if(orient == "portrait") {
+                        $("<h1>", {
+                          class: "announce",
+                          html: "Best done on a computer"
+                        }).appendTo("#code");
+                      }
+
                       $("<div />", {
                         class: "scrollerWrap"
                       }).appendTo("#code");
@@ -275,6 +293,9 @@ fetch("https://www.themonster.xyz/docs/profiles.json")
                       $("<div />", {
                         class: "exit",
                         click: function() {
+                          
+                          showCode = false;
+
                           $("#code").fadeOut(200);
                           setTimeout(function(){
                             $("#code").remove();
@@ -370,6 +391,10 @@ fetch("https://www.themonster.xyz/docs/profiles.json")
             mouseenter: function() {
               var tipPosition = $(this).offset();
               var width = $(this).outerWidth();
+
+              if(orient == "portrait") {
+                return;
+              }
     
               $("#tooltips").append($("<div />", {
                 class: `tooltip top`,
