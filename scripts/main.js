@@ -7,11 +7,8 @@ document.head.appendChild(momentjs)
 
 $(window).orientationchange(function(e){
   var menu = $("#header .logo.home");
-  orient = e.orientation;
-  console.log(e.orientation);
   console.log(orient);
   if(orient == "portrait") {
-    console.log("transfer header to bottom");
     var detach = $("#header").detach();
     detach.insertBefore("#content+*");
     menu.hasClass("menu") ? null : menu.addClass("menu");
@@ -23,7 +20,6 @@ $(window).orientationchange(function(e){
       }).prependTo("#header .headerBar");
     }
   } else if (orient == "landscape") {
-    console.log("transfer header to top");
     var detach = $("#header").detach();
     detach.insertBefore("#content");
     menu.hasClass("menu") ? menu.removeClass("menu") : null
