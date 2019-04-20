@@ -135,6 +135,7 @@ $(document).ready(()=>{
   })
 
   $("#showprofile").click(()=>{
+    console.log("show rp profile")
     showRP();
   })
 

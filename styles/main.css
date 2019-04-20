@@ -16,6 +16,10 @@ body {
   --fade-red: #bd5a5a;
 }
 
+:focus {
+  outline: none;
+}
+
 body {
   margin: 0;
   overflow: hidden;
