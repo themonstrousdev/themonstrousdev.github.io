@@ -1070,15 +1070,8 @@ input[name="submit"]:hover {
     background-size: 8vw;
   }
 
-  #code .scrollerWrap {
-    bottom: 8vw;
-  }
-
-  #code .choice {
-    margin: 0;
-    border-left: .1vh solid currentColor;
-    border-right: .1vh solid currentColor;
-    padding: 0 1vh;
+  #code .choices {
+    display: none;
   }
 
   #code h1.announce {

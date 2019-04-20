@@ -273,7 +273,7 @@ fetch("https://www.themonster.xyz/docs/profiles.json")
                       if(orient == "portrait") {
                         $("<h1>", {
                           class: "announce",
-                          html: "Best done on a computer"
+                          html: "Please do this on a computer"
                         }).appendTo("#code");
                       }
 
