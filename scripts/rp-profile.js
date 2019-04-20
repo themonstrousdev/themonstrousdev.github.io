@@ -4,6 +4,38 @@ var momentjs = document.createElement("script");
 momentjs.src = "https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js";
 document.head.appendChild(momentjs)
 
+
+$(window).orientationchange(function(e){
+  var menu = $("#header .logo.home");
+  orient = e.orientation;
+  console.log(e.orientation);
+  console.log(orient);
+  if(orient == "portrait") {
+    console.log("transfer header to bottom");
+    var detach = $("#header").detach();
+    detach.insertBefore("#content+*");
+    menu.hasClass("menu") ? null : menu.addClass("menu");
+    if($(".button[opens=home]").length == 0) {
+      $("<div>", {
+        class: "unset-style button",
+        opens: "home",
+        html: "Home"
+      }).prependTo("#header .headerBar");
+    }
+  } else if (orient == "landscape") {
+    console.log("transfer header to top");
+    var detach = $("#header").detach();
+    detach.insertBefore("#content");
+    menu.hasClass("menu") ? menu.removeClass("menu") : null
+    $(".headerBar .button[opens=home]").remove();
+  } else {
+    logError("Unknown orientation type");
+  }
+})
+
+$(window).orientationchange();
+
+
 function showRP() {
   if($("#background").html() != "") {
     
@@ -113,10 +145,35 @@ $(document).ready(()=>{
     id: "tooltips"
   }));
 
-  $("body").on("click", ".unset-style", function(){
+  $("body").on("click", ".unset-style.menu", function(){
+    $("#header").addClass("open");
+    $("<div>", {
+      id: "headerExit",
+      click: function() {
+        $("#header").removeClass("open");
+        $("#headerExit").fadeOut(500);
+  
+        setTimeout(() => {
+          $("#headerExit").remove();
+        }, 1000);
+      }
+    }).insertBefore("#header");
+  });
+
+  $("body").on("click", ".unset-style:not(.menu)", function(){
+    if($("#header").hasClass("open")) {
+      $("#header").removeClass("open");
+      $("#headerExit").fadeOut(500);
+  
+      setTimeout(() => {
+        $("#headerExit").remove();
+      }, 1000);
+    }  
+    
     if(currentTab == $(this).attr("opens")) {
       return;
     }
+    
     var elem = $(this),
     script = elem.attr("script");
     currentTab = elem.attr("opens");
