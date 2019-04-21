@@ -85,7 +85,7 @@ function appendComments(data) {
 }
 
 function fetchData() {
-  fetch("https://getsimpleform.com/messages.json?api_token=c3d5d9499780701b4ce87450444c2390")
+  fetch(`https://getsimpleform.com/messages.json?api_token=${window.location.hostname == "www.themonster.xyz" || window.location.hostname == "localhost" ? "47d89ff8dfc0c28f18199752e9d3ff39" : "c3d5d9499780701b4ce87450444c2390"}`)
   .then(res => {
     return res.json()
   })
