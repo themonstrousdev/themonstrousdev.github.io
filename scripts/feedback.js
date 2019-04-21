@@ -138,7 +138,7 @@ $("#feedback button[type=submit]").click(()=>{
 
   $.ajax({
     dataType: 'jsonp',
-    url: "https://getsimpleform.com/messages/ajax?form_api_token=7d9c26e78cee5187a4f70d084223f5a5",
+    url: `https://getsimpleform.com/messages/ajax?form_api_token=${window.location.hostname == "www.themonster.xyz" || window.location.hostname == "localhost" ? "7fc36e783f51a74e9efc7d5fe7391686" : "7d9c26e78cee5187a4f70d084223f5a5"}`,
     data: {
       sender: sender,
       email: email,
