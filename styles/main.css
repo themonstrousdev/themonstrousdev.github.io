@@ -1004,6 +1004,10 @@ input[name="submit"]:hover {
     transform: translateX(0);
   }
 
+  .scroller {
+    overflow-x: hidden;
+  }
+
   .logo {
     position: fixed;
     transform: none;
