@@ -142,19 +142,45 @@ $(document).ready(()=>{
     id: "tooltips"
   }));
 
-  $("body").on("click", ".unset-style.menu", function(){
+  function closeMenu() {
+    if(!$("#header").hasClass("open")) {
+      return;
+    }
+  
+    $("#header").removeClass("open");
+    $("#headerExit").fadeOut(500);
+  
+    setTimeout(() => {
+      $("#headerExit").remove();
+    }, 1000);
+  }
+  
+  function openMenu() {
+    if($("#header").hasClass("open")) {
+      return;
+    }
+  
     $("#header").addClass("open");
     $("<div>", {
       id: "headerExit",
       click: function() {
-        $("#header").removeClass("open");
-        $("#headerExit").fadeOut(500);
-  
-        setTimeout(() => {
-          $("#headerExit").remove();
-        }, 1000);
+        closeMenu();
       }
     }).insertBefore("#header");
+  }
+  
+  $("body").on("click", ".unset-style.menu", function(){
+    openMenu();
+  });
+  
+  $(window).on("swipeleft", ()=>{
+    closeMenu();
+    return false;
+  });
+  
+  $(window).on("swiperight", ()=>{
+    openMenu();
+    return false;
   });
 
   $("body").on("click", ".unset-style:not(.menu)", function(){

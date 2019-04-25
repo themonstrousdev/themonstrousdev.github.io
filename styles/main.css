@@ -1,3 +1,38 @@
+@font-face {
+   font-family: 'Share'; 
+   src: url('../assets/fonts/share.ttf') format('truetype')
+}
+
+@font-face {
+   font-family: 'Atlantida'; 
+   src: url('../assets/fonts/Atlantida.ttf') format('truetype')
+}
+
+@font-face {
+   font-family: 'Hemera'; 
+   src: url('../assets/fonts/hemera_ii-webfont.ttf') format('truetype')
+}
+
+@font-face {
+   font-family: 'Voyager'; 
+   src: url('../assets/fonts/Voyager\ Grotesque\(regular\).ttf') format('truetype')
+}
+
+@font-face {
+   font-family: 'Big Noodle Titling'; 
+   src: url('../assets/fonts/big_noodle_titling.ttf') format('truetype')
+}
+
+@font-face {
+   font-family: 'Roboto Condensed'; 
+   src: url('../assets/fonts/roboto-condensed.ttf') format('truetype')
+}
+
+@font-face {
+   font-family: 'Hotel De Paris'; 
+   src: url('../assets/fonts/hotel_de_paris.ttf') format('truetype')
+}
+
 html,
 body {
   height: 100%;
