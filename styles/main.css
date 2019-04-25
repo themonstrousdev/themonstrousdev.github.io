@@ -969,6 +969,10 @@ input[name="submit"]:hover {
 }
 
 @media all and (orientation:portrait) {
+  body {
+    touch-action: manipulation;
+  }
+
   #load {
     width: 63vw;
     height: 37vw;
