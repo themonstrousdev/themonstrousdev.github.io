@@ -969,6 +969,10 @@ input[name="submit"]:hover {
 }
 
 @media all and (orientation:portrait) {
+  body {
+    touch-action: manipulation;
+  }
+
   #load {
     width: 63vw;
     height: 37vw;
@@ -998,6 +1002,10 @@ input[name="submit"]:hover {
 
   #header.open {
     transform: translateX(0);
+  }
+
+  .scroller {
+    overflow-x: hidden;
   }
 
   .logo {
