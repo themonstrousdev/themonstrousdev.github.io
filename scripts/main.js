@@ -1,13 +1,17 @@
 var body = {url: "./src/home.html"}, loaded = false, loader, prevPage = [], prevScript = [], content = $("#content"),
 currentTab = content.attr("open-tab"), orient, header = $("#header").html(), momentjs = document.createElement("script");
 
+$.getScript('./scripts/libs/swiped-events-master/src/swiped-events.js', function() {
+  logSuccess("Injected swipe detector");
+});
+
 momentjs.src = "https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js";
 
 document.head.appendChild(momentjs)
 
-$(window).orientationchange(function(e){
+function orientchange(e) {
   var menu = $("#header .logo.home");
-  orient = e.orientation;
+  orient = window.screen.orientation.type.includes("landscape") ? "landscape" : "portrait";
   if(orient == "portrait") {
     var detach = $("#header").detach();
     detach.insertBefore("#content+*");
@@ -27,9 +31,13 @@ $(window).orientationchange(function(e){
   } else {
     logError("Unknown orientation type");
   }
+}
+
+$(window).resize(()=>{
+  orientchange();
 })
 
-$(window).orientationchange();
+orientchange();
 
 function logError(text) {
   console.log("%c[ERROR]: %c" + text, "color: red; font-weight: bold;font-family: monospace", "color: black; font-family: monospace");
@@ -127,12 +135,12 @@ $("body").on("click", ".unset-style.menu", function(){
   openMenu();
 });
 
-$(window).on("swipeleft", ()=>{
+$(window).on("swiped-left", ()=>{
   closeMenu();
   return false;
 });
 
-$(window).on("swiperight", ()=>{
+$(window).on("swiped-right", ()=>{
   openMenu();
   return false;
 });
