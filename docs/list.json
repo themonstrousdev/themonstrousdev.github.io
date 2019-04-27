@@ -1,20 +1,15 @@
 {
   "Accomodating": [
     {
-      "name": "Aka",
-      "stage": "Visualization",
-      "comment": {
-        "color": "yellow",
-        "text": "compressing"
-      }
-    },
-    {
       "name": "The Icecream Man",
       "stage": "Consultation",
       "comment": {
         "color": "yellow",
         "text": "acquiring profile information"
       }
+    },
+    {
+      "name": "Unoccupied to give allowance for on hold profiles"
     },
     {
       "name": "Unoccupied to give allowance for on hold profiles"
@@ -44,13 +39,6 @@
         "color": "red",
         "weight": "bold",
         "text": "delayed payment"
-      }
-    },
-    {
-      "name": "Pandora",
-      "comment": {
-        "color": "yellow",
-        "text": "pending payment"
       }
     }
   ]
