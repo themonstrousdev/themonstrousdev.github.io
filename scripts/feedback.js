@@ -19,17 +19,29 @@ function appendComments(data) {
     $("#feedback #comments").append("<h2 class='feedback'>No one has left feedback yet! Be the first one.</h2>");
   } else {
     for(i = 0; i < data.length; i++) {
-      var date = moment(data[i]["created_at"]).format("LLL"),
+      var date = moment(data[i]["created_at"]),
       sender = data[i]["data"].sender,
-      message = data[i]["data"].message;
+      message = data[i]["data"].message,
+      relativeTime = date.fromNow(),
+      printedTime;
+
+      if(relativeTime.includes("days")) {
+        printedTime = date.format("LLL");
+      } else if (relativeTime.includes("day")) {
+        printedTime = "Yesterday "+date.format("LT");
+      } else {
+        printedTime = relativeTime;
+      }
       
+
+
       $("<div>", {
         class: "commentContainer"
       }).appendTo("#comments");
 
       $("<div>", {
         class: "sender",
-        html: `${sender == ""?"Anonymous":sender} <span>${date}</span>`
+        html: `${sender == ""?"Anonymous":sender} <span>${printedTime}</span>`
       }).appendTo("#comments .commentContainer:last-child");
 
       $("<div>", {
@@ -81,7 +93,7 @@ function appendComments(data) {
           });
         }
       }
-    }); 
+    });
 }
 
 function fetchData() {
