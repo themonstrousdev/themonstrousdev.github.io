@@ -1,7 +1,7 @@
 {
   "Accomodating": [
     {
-      "name": "The Icecream Man",
+      "name": "Kama",
       "stage": "Consultation",
       "comment": {
         "color": "yellow",
@@ -9,7 +9,12 @@
       }
     },
     {
-      "name": "Unoccupied to give allowance for on hold profiles"
+      "name": "Ookanehira",
+      "stage": "Consultation",
+      "comment": {
+        "color": "green",
+        "text": "received profile information"
+      }
     },
     {
       "name": "Unoccupied to give allowance for on hold profiles"
@@ -31,14 +36,14 @@
       }
     }
   ],
-  "Waiting List": ["Kama"],
+  "Waiting List": [],
   "Pending Payment": [
     {
       "name": "Rockman",
       "comment": {
         "color": "red",
         "weight": "bold",
-        "text": "delayed payment"
+        "text": "extremely delayed payment"
       }
     }
   ]
