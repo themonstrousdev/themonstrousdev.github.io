@@ -1,5 +1,5 @@
 var body = {url: "./src/home.html"}, loaded = false, loader, prevPage = [], prevScript = [], content = $("#content"),
-currentTab = content.attr("open-tab"), orient, header = $("#header").html(), momentjs = document.createElement("script");
+currentTab = content.attr("open-tab"), orient, header = $("#header").html(), momentjs = document.createElement("script"),date = new Date(), currentYear = date.getFullYear();
 
 $.getScript('./scripts/libs/swiped-events-master/src/swiped-events.js', function() {
   logSuccess("Injected swipe detector");
@@ -94,11 +94,13 @@ function getData(tab) {
     }, 100);
 
     if(tab) {
-      history.pushState("", "", `${tab != "home"?tab:"/"}`)
+      // history.pushState("", "", `${tab != "home"?tab:"/"}`)
     }
     $("#content").html(html);
   });
 }
+
+$("#footer #copy").html(`Copyrighted &copy; ${currentYear}, Monster Dev`);
 
 $("body").append($("<div />", {
   id: "tooltips"

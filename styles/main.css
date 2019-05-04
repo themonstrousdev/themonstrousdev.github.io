@@ -150,6 +150,31 @@ body {
   font-size: 2.5vw;
 }
 
+
+/* ========= footer =========== */
+#footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 5vh;
+  background: #222;
+  padding: 1vw;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  font-family: "Hemera", serif;
+  font-size: 2.9vh;
+  text-transform: lowercase;
+}
+
+.copyrighted-badge {
+  position: relative;
+  height: 25px;
+}
+
 .flex {
   display: flex;
   justify-content: space-evenly;
@@ -195,7 +220,7 @@ body {
   position: absolute;
   overflow: hidden;
   top: 18vh;
-  height: 82vh;
+  height: 77vh;
   width: 100%;
 }
 
@@ -1087,7 +1112,10 @@ input[name="submit"]:hover {
     font-size: 5vw;
   }
 
-  .body .scroller>*:not(.header):not(.flexBox) {
+  .body .scroller p,
+  .body .scroller ol,
+  .body .scroller ul,
+  .body .scroller #comments {
     margin-left: 0;
     margin-right: 0;
   }
