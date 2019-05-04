@@ -1,6 +1,11 @@
 {
   "commission": [
     {
+      "name": "Fern Rosewood",
+      "background": "https://i.imgur.com/08XU4Sx.png",
+      "preview": "https://i.imgur.com/exqu56i.gif"
+    },
+    {
       "name": "Arthur Alter",
       "background": "https://i.imgur.com/JUoMkn7.jpg",
       "preview": "https://i.imgur.com/CkgEBEm.gif"
@@ -270,6 +275,11 @@
     }
   ],
   "raffle": [
+    {
+      "name": "The Icecream Man",
+      "background": "https://i.imgur.com/xPYUutm.png",
+      "preview": "https://i.imgur.com/xPYUutm.png"
+    },
     {
       "name": "Flame",
       "background": "https://i.imgur.com/m5pdFI3.png",
