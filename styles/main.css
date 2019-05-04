@@ -175,6 +175,10 @@ body {
   height: 25px;
 }
 
+.copyrighted-badge img {
+  height: 100% !important;
+}
+
 .flex {
   display: flex;
   justify-content: space-evenly;
@@ -1086,6 +1090,11 @@ input[name="submit"]:hover {
 
   .headerBar span {
     display: none;
+  }
+
+  .copyrighted-badge img {
+    height: unset !important;
+    width: 30vw;
   }
 
   #content {
