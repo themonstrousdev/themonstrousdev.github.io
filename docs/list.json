@@ -2,6 +2,14 @@
   "Accomodating": [
     {
       "name": "Kama",
+      "stage": "Visualization",
+      "comment": {
+        "color": "yellow",
+        "text": "making first profile draft"
+      }
+    },
+    {
+      "name": "Ookanehira",
       "stage": "Consultation",
       "comment": {
         "color": "yellow",
@@ -9,15 +17,12 @@
       }
     },
     {
-      "name": "Ookanehira",
+      "name": "Ragna",
       "stage": "Consultation",
       "comment": {
         "color": "green",
         "text": "received profile information"
       }
-    },
-    {
-      "name": "Unoccupied to give allowance for on hold profiles"
     }
   ],
   "On Hold": [
