@@ -94,7 +94,7 @@ function getData(tab) {
     }, 100);
 
     if(tab) {
-      // history.pushState("", "", `${tab != "home"?tab:"/"}`)
+      history.pushState("", "", `${tab != "home"?tab:"/"}`)
     }
     $("#content").html(html);
   });
