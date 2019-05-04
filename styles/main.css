@@ -973,8 +973,8 @@ input[name="submit"]:hover {
 
 .toFeedback {
   position: fixed;
-  bottom: 3vh;
-  right: 5vw;
+  bottom: 6vh;
+  right: 15vw;
   width: fit-content;
   padding: 1vh 2vh;
   background: rgba(255, 255, 255, 0.1);
