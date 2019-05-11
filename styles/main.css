@@ -66,12 +66,21 @@ body {
 }
 
 * {
- user-select: none;
  -webkit-user-drag: none;
- -webkit-user-select: none;
- -moz-user-select: none;
- -ms-user-select: none;
  box-sizing: border-box;
+}
+
+img,
+.logo {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+::selection {
+  background: var(--blurple);
+  color: white;
 }
 
 /* ============= header =============== */
