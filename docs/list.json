@@ -1,23 +1,23 @@
 {
   "Accomodating": [
     {
-      "name": "Kama",
-      "stage": "Visualization",
-      "comment": {
-        "color": "yellow",
-        "text": "making first profile draft"
-      }
-    },
-    {
-      "name": "Ookanehira",
+      "name": "Ragna",
       "stage": "Consultation",
       "comment": {
         "color": "yellow",
-        "text": "acquiring profile information"
+        "text": "working on profile draft"
       }
     },
     {
-      "name": "Ragna",
+      "name": "Black Fatalis",
+      "stage": "Consultation",
+      "comment": {
+        "color": "green",
+        "text": "received profile information"
+      }
+    },
+    {
+      "name": "Malachi Wolfe",
       "stage": "Consultation",
       "comment": {
         "color": "green",
