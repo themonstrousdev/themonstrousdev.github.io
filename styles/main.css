@@ -79,7 +79,7 @@ img,
 }
 
 ::selection {
-  background: var(--blurple);
+  background: var(--greyple);
   color: white;
 }
 
