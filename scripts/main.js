@@ -1,7 +1,5 @@
-var body = {url: "./src/home.html"}, loaded = false, loader, prevPage = [], prevScript = [], content = $("#content"),
+var body = {url: "./src/home.html", title: document.title}, loaded = false, loader, prevPage = [], prevScript = [], content = $("#content"),
 currentTab = content.attr("open-tab"), orient, momentjs = document.createElement("script"),date = new Date(), currentYear = date.getFullYear(), prevHeads = [];
-
-body.title = document.title;
 
 $.getScript('./scripts/libs/swiped-events-master/src/swiped-events.js', function() {
   logSuccess("Injected swipe detector");
