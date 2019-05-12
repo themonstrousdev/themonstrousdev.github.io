@@ -169,7 +169,7 @@ $("body").on("click", ".unset-style:not(.menu)", function(){
 
   lastSlash && lastSlash != url.length - 1 ? prevPage.push(url.slice(lastSlash + 1)) : prevPage.push("home");
   prevScript.push(body.reqScript);
-  prevHeads.push(header);
+  prevHeads.push(body.title);
 
   currentTab = elem.attr("opens");
   header = elem.attr("head");
