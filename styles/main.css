@@ -718,6 +718,7 @@ ol li:nth-of-type(n+10)::before {
   font-size: 3vw;
   color: var(--fade-red);
   line-height: 2vw;
+  white-space: nowrap;
 }
 
 .fontName span {
