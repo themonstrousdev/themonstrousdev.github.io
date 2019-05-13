@@ -386,6 +386,11 @@
 }
 
 @font-face {
+   font-family: 'Old Klarheit'; 
+   src: url('https://dl.dropbox.com/s/s2c4x96q9qy2jht/OldKlarheit-Regular.ttf') format('truetype')
+}
+
+@font-face {
    font-family: 'Olympus'; 
    src: url('https://dl.dropbox.com/s/ygejlbwykhbdei7/OLYMB___.TTF') format('truetype')
 }
