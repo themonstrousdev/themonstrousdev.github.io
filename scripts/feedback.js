@@ -25,12 +25,12 @@ function appendComments(data) {
       relativeTime = date.fromNow(),
       printedTime;
 
-      if(relativeTime.includes("days")) {
-        printedTime = date.format("LLL");
-      } else if (relativeTime.includes("day")) {
+      if(relativeTime.includes("day a")) {
         printedTime = "Yesterday "+date.format("LT");
-      } else {
+      } else if (relativeTime.includes("second") || relativeTime.includes("minute") || relativeTime.includes("hour")) {
         printedTime = relativeTime;
+      } else {
+        printedTime = date.format("LLL");
       }
       
 
