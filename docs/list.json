@@ -2,10 +2,10 @@
   "Accomodating": [
     {
       "name": "Black Fatalis",
-      "stage": "Consultation",
+      "stage": "Visualization",
       "comment": {
-        "color": "green",
-        "text": "received profile information"
+        "color": "yellow",
+        "text": "working on profile draft"
       }
     },
     {
