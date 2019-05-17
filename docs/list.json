@@ -1,14 +1,6 @@
 {
   "Accomodating": [
     {
-      "name": "Ragna",
-      "stage": "Consultation",
-      "comment": {
-        "color": "yellow",
-        "text": "working on profile draft"
-      }
-    },
-    {
       "name": "Black Fatalis",
       "stage": "Consultation",
       "comment": {
@@ -41,15 +33,5 @@
       }
     }
   ],
-  "Waiting List": ["<b class=\"red\">Waiting list closed until furter notice</b>"],
-  "Pending Payment": [
-    {
-      "name": "Rockman",
-      "comment": {
-        "color": "red",
-        "weight": "bold",
-        "text": "extremely delayed payment"
-      }
-    }
-  ]
+  "Waiting List": ["<b class=\"red\">Waiting list closed until furter notice</b>"]
 }
