@@ -1,6 +1,11 @@
 {
   "commission": [
     {
+      "name": "Ragna",
+      "background": "https://i.imgur.com/4Gu8ssE.png",
+      "preview": "https://i.imgur.com/4Gu8ssE.png"
+    },
+    {
       "name": "Fern Rosewood",
       "background": "https://i.imgur.com/08XU4Sx.png",
       "preview": "https://i.imgur.com/exqu56i.gif"
