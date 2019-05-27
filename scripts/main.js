@@ -158,7 +158,7 @@ $("body").on("click", ".unset-style:not(.menu)", function(){
     }, 1000);
   }
 
-  if(currentTab == $(this).attr("opens")) {
+  if(currentTab == $(this).attr("opens") || !$(this).attr("opens")) {
     return;
   }
 
