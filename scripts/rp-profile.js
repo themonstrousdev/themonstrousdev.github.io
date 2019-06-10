@@ -109,6 +109,20 @@ function getData() {
   });
 }
 
+function checkLoad() {
+  if ( loaded ) {
+    if($("body").find("#loading").length > 0) {
+      endLoad();
+    }
+  } else if (!loaded) {
+    if($("body").find("#loading").length == 0) {
+      showLoading();
+      console.log(currentTab);
+    }
+    setTimeout(checkLoad, 100);
+  };
+}
+
 $("#footer #copy").html(`Copyrighted &copy; ${currentYear}, The Monster`);
 
 
@@ -239,20 +253,6 @@ $(document).ready(()=>{
       }, 100);
     }, 300);
 
-    function checkLoad() {
-      if ( loaded ) {
-        if($("body").find("#loading").length > 0) {
-          endLoad();
-        }
-      } else if (!loaded) {
-        if($("body").find("#loading").length == 0) {
-          showLoading();
-          console.log(currentTab);
-        }
-        setTimeout(checkLoad, 100);
-      };
-    }
-
     loader = setTimeout(() => {
       checkLoad();
     }, 2000);
@@ -260,7 +260,7 @@ $(document).ready(()=>{
   });
 });
 
-$(window).on("load", ()=>{
+$(document).ready(()=>{
   getData();
-  endLoad();
+  setTimeout(checkLoad, 100);
 });
