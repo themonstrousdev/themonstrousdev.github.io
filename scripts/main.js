@@ -206,9 +206,9 @@ $("body").on("click", ".unset-style:not(.menu)", function(){
 
 });
 
-$(window).on("load", ()=>{
+$(document).ready(()=>{
   getData($("#content").attr("open-tab"));
-  endLoad();
+  setTimeout(checkLoad, 100);
 });
 
 $(window).on("popstate", function(e) {
