@@ -1,23 +1,15 @@
 {
   "Accomodating": [
     {
-      "name": "Kama",
+      "name": "Black Fatalis",
       "stage": "Visualization",
       "comment": {
         "color": "yellow",
-        "text": "making first profile draft"
+        "text": "working on profile draft"
       }
     },
     {
-      "name": "Ookanehira",
-      "stage": "Consultation",
-      "comment": {
-        "color": "yellow",
-        "text": "acquiring profile information"
-      }
-    },
-    {
-      "name": "Ragna",
+      "name": "Malachi Wolfe",
       "stage": "Consultation",
       "comment": {
         "color": "green",
@@ -41,15 +33,5 @@
       }
     }
   ],
-  "Waiting List": [],
-  "Pending Payment": [
-    {
-      "name": "Rockman",
-      "comment": {
-        "color": "red",
-        "weight": "bold",
-        "text": "extremely delayed payment"
-      }
-    }
-  ]
+  "Waiting List": ["<b class=\"red\">Waiting list closed until furter notice</b>"]
 }

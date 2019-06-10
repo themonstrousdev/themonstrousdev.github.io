@@ -1,4 +1,4 @@
-var body = {url: "https://www.themonster.xyz/src/home.html"}, loaded = false, loader;
+var body = {url: "https://www.themonster.xyz/src/home.html"}, loaded = false, loader, date = new Date(), currentYear = date.getFullYear();
 
 var momentjs = document.createElement("script");
 momentjs.src = "https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js";
@@ -108,6 +108,8 @@ function getData() {
     $("#content").html(html);
   });
 }
+
+$("#footer #copy").html(`Copyrighted &copy; ${currentYear}, The Monster`);
 
 
 $(document).ready(()=>{

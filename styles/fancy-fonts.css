@@ -135,6 +135,16 @@
 }
 
 @font-face {
+   font-family: 'Black Nemesis'; 
+   src: url('https://dl.dropbox.com/s/d7i10i9nmpy9w80/Black%20Nemesis.ttf') format('truetype')
+}
+
+@font-face {
+   font-family: 'Black Nemesis Grunge'; 
+   src: url('https://dl.dropbox.com/s/cg3e2jvmtpxwogt/Black%20Nemesis%20Grunge.ttf') format('truetype')
+}
+
+@font-face {
   font-family: 'Blow Me'; 
   src: url('https://dl.dropbox.com/s/43kf1cuhbc1nk4g/BLOW%20ME%20PERSONAL%20USE.ttf') format('truetype')
 } /* letters only */
@@ -386,6 +396,11 @@
 }
 
 @font-face {
+   font-family: 'Old Klarheit'; 
+   src: url('https://dl.dropbox.com/s/s2c4x96q9qy2jht/OldKlarheit-Regular.ttf') format('truetype')
+}
+
+@font-face {
    font-family: 'Olympus'; 
    src: url('https://dl.dropbox.com/s/ygejlbwykhbdei7/OLYMB___.TTF') format('truetype')
 }
@@ -495,7 +510,7 @@
 }
 
 @font-face {
-  font-family: 'You Wont Bring Me Down' ; 
+  font-family: 'You Wont Bring Me Down'; 
   src: url('https://dl.dropbox.com/s/ljc6xpajtcokxsp/KGYouWontBringMeDown.ttf') format('truetype')
 }
 

@@ -1,5 +1,5 @@
-var body = {url: "./src/home.html"}, loaded = false, loader, prevPage = [], prevScript = [], content = $("#content"),
-currentTab = content.attr("open-tab"), orient, header = $("#header").html(), momentjs = document.createElement("script"),date = new Date(), currentYear = date.getFullYear();
+var body = {url: "./src/home.html", title: document.title}, loaded = false, loader, prevPage = [], prevScript = [], content = $("#content"),
+currentTab = content.attr("open-tab"), orient, momentjs = document.createElement("script"),date = new Date(), currentYear = date.getFullYear(), prevHeads = [];
 
 $.getScript('./scripts/libs/swiped-events-master/src/swiped-events.js', function() {
   logSuccess("Injected swipe detector");
@@ -94,7 +94,8 @@ function getData(tab) {
     }, 100);
 
     if(tab) {
-      // history.pushState("", "", `${tab != "home"?tab:"/"}`)
+      history.pushState("", "", `${tab != "home"?tab:"/"}`)
+      document.title = body.title;
     }
     $("#content").html(html);
   });
@@ -157,7 +158,7 @@ $("body").on("click", ".unset-style:not(.menu)", function(){
     }, 1000);
   }
 
-  if(currentTab == $(this).attr("opens")) {
+  if(currentTab == $(this).attr("opens") || !$(this).attr("opens")) {
     return;
   }
 
@@ -168,13 +169,16 @@ $("body").on("click", ".unset-style:not(.menu)", function(){
 
   lastSlash && lastSlash != url.length - 1 ? prevPage.push(url.slice(lastSlash + 1)) : prevPage.push("home");
   prevScript.push(body.reqScript);
+  prevHeads.push(body.title);
 
   currentTab = elem.attr("opens");
+  header = elem.attr("head");
   loaded = false;
   clearTimeout(loader);
   body = {
     url: `./src/${currentTab}.html`,
-    reqScript: script?`./scripts/${script}.js`:null
+    reqScript: script?`./scripts/${script}.js`:null,
+    title: header
   }
 
   $(`.scrollerWrap.body:not(#${currentTab})`).fadeOut(200);
@@ -218,7 +222,8 @@ $(window).on("popstate", function(e) {
     clearTimeout(loader);
     body = {
       url: `./src/${currentTab}.html`,
-      reqScript: prevScript[prevScript.length - 1]
+      reqScript: prevScript[prevScript.length - 1],
+      title: prevHeads[prevHeads.length - 1]
     }
 
     $(`.scrollerWrap.body:not(#${currentTab})`).fadeOut(200);
@@ -250,6 +255,7 @@ $(window).on("popstate", function(e) {
 
     prevPage.pop();
     prevScript.pop();
+    prevHead.pop();
   } else {
     window.history.back();
   }

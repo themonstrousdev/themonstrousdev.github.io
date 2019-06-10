@@ -66,12 +66,21 @@ body {
 }
 
 * {
- user-select: none;
  -webkit-user-drag: none;
- -webkit-user-select: none;
- -moz-user-select: none;
- -ms-user-select: none;
  box-sizing: border-box;
+}
+
+img,
+.logo {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+::selection {
+  background: var(--greyple);
+  color: white;
 }
 
 /* ============= header =============== */
@@ -173,6 +182,10 @@ body {
 .copyrighted-badge {
   position: relative;
   height: 25px;
+}
+
+.copyrighted-badge img {
+  height: 100% !important;
 }
 
 .flex {
@@ -705,6 +718,7 @@ ol li:nth-of-type(n+10)::before {
   font-size: 3vw;
   color: var(--fade-red);
   line-height: 2vw;
+  white-space: nowrap;
 }
 
 .fontName span {
@@ -969,8 +983,8 @@ input[name="submit"]:hover {
 
 .toFeedback {
   position: fixed;
-  bottom: 3vh;
-  right: 5vw;
+  bottom: 6vh;
+  right: 15vw;
   width: fit-content;
   padding: 1vh 2vh;
   background: rgba(255, 255, 255, 0.1);
@@ -1086,6 +1100,11 @@ input[name="submit"]:hover {
 
   .headerBar span {
     display: none;
+  }
+
+  .copyrighted-badge img {
+    height: unset !important;
+    width: 30vw;
   }
 
   #content {
