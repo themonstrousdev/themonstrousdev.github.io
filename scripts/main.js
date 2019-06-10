@@ -101,6 +101,20 @@ function getData(tab) {
   });
 }
 
+function checkLoad() {
+  if ( loaded ) {
+    if($("body").find("#loading").length > 0) {
+      endLoad();
+    }
+  } else if (!loaded) {
+    if($("body").find("#loading").length == 0) {
+      showLoading();
+      console.log(currentTab);
+    }
+    setTimeout(checkLoad, 100);
+  };
+}
+
 $("#footer #copy").html(`Copyrighted &copy; ${currentYear}, Monster Dev`);
 
 $("body").append($("<div />", {
@@ -190,20 +204,6 @@ $("body").on("click", ".unset-style:not(.menu)", function(){
     getData(currentTab);
   }, 300);
 
-  function checkLoad() {
-    if ( loaded ) {
-      if($("body").find("#loading").length > 0) {
-        endLoad();
-      }
-    } else if (!loaded) {
-      if($("body").find("#loading").length == 0) {
-        showLoading();
-        console.log(currentTab);
-      }
-      setTimeout(checkLoad, 100);
-    };
-  }
-
   loader = setTimeout(() => {
     checkLoad();
   }, 2000);
@@ -234,20 +234,6 @@ $(window).on("popstate", function(e) {
     setTimeout(() => {
       getData(currentTab);
     }, 300);
-
-    function checkLoad() {
-      if ( loaded ) {
-        if($("body").find("#loading").length > 0) {
-          endLoad();
-        }
-      } else if (!loaded) {
-        if($("body").find("#loading").length == 0) {
-          showLoading();
-          console.log(currentTab);
-        }
-        setTimeout(checkLoad, 100);
-      };
-    }
 
     loader = setTimeout(() => {
       checkLoad();
