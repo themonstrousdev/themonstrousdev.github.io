@@ -258,9 +258,7 @@ $(document).ready(()=>{
     }, 2000);
 
   });
-});
 
-$(window).on("load", ()=>{
   getData();
   endLoad();
 });
