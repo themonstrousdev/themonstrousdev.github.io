@@ -258,7 +258,10 @@ $(document).ready(()=>{
     }, 2000);
 
   });
-  
+
   getData();
-  setTimeout(checkLoad, 100);
+});
+
+$("window").on("load", ()=>{
+  endLoad();
 });
