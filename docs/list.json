@@ -1,19 +1,19 @@
 {
   "Accomodating": [
     {
-      "name": "Black Fatalis",
-      "stage": "Visualization",
-      "comment": {
-        "color": "yellow",
-        "text": "working on profile draft"
-      }
-    },
-    {
       "name": "Malachi Wolfe",
       "stage": "Consultation",
       "comment": {
         "color": "green",
         "text": "received profile information"
+      }
+    },
+    {
+      "name": "Harken",
+      "stage": "Visualization",
+      "comment": {
+        "color": "yellow",
+        "text": "making first draft"
       }
     }
   ],
@@ -33,5 +33,5 @@
       }
     }
   ],
-  "Waiting List": ["<b class=\"red\">Waiting list closed until furter notice</b>"]
+  "Waiting List": ["No one!"]
 }

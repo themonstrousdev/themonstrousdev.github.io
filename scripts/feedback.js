@@ -118,7 +118,9 @@ function fetchData() {
     endLoad();
   })
   .catch(err => {
+    $("#feedback #comments").append("<h2 class='feedback red'>Something went wrong with fetching the comments!</h2>");
     logError(err);
+    endLoad();
   });
 };
 
