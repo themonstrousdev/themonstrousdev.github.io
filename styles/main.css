@@ -881,7 +881,8 @@ input[name="submit"]:hover {
   opacity: 1;
 }
 
-#feedback form {
+#feedback form,
+#updates form {
   width: fit-content;
   margin-top: 2vh;
   display: flex;
@@ -891,7 +892,8 @@ input[name="submit"]:hover {
   transform: translateX(-50%);
 }
 
-#feedback textarea {
+#feedback textarea,
+#updates, textarea {
   width: 40vw;
   min-height: 30vh;
   margin-bottom: 2vh;
@@ -904,7 +906,8 @@ input[name="submit"]:hover {
   transition: all .2s ease-in-out;
 }
 
-#feedback button {
+#feedback button,
+#updates button {
   width: 16vw;
   padding: .5vh;
   background: rgba(255, 255, 255, 0.1);
@@ -920,24 +923,32 @@ input[name="submit"]:hover {
   transition: all .2s ease-in-out;
 }
 
-#feedback button:hover {
+#feedback button:hover,
+#updates button:hover {
   background: rgba(255, 255, 255, 0.3);
 }
 
 #feedback textarea:focus,
 #feedback button:focus,
-#feedback input:focus {
+#feedback input:focus,
+#updates textarea:focus,
+#updates button:focus,
+#updates input:focus {
   box-shadow: 0 0 1vh #aaa;
   outline: none;
 }
 
 #feedback textarea:active,
 #feedback button:active,
-#feedback input:active {
+#feedback input:active,
+#updates textarea:active,
+#updates button:active,
+#updates input:active {
   outline: none;
 }
 
-#feedback input {
+#feedback input,
+#updates input {
   margin-bottom: 2vh;
   padding: 1vh 2vh;
   border: .2vh solid rgb(203, 219, 248);
@@ -1208,15 +1219,18 @@ input[name="submit"]:hover {
     height: 2vh;
   }
 
-  #feedback textarea {
+  #feedback textarea,
+  #updates textarea {
     width: 86vw;
   }
 
-  #feedback input {
+  #feedback input,
+  #updates input {
     width: 68vw;
   }
 
-  #feedback button {
+  #feedback button,
+  #updates button {
     width: 30vw;
   }
 }
