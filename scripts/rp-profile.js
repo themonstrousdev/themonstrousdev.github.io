@@ -260,7 +260,7 @@ $(document).ready(()=>{
   });
 });
 
-$("window").on("load", ()=>{
+$(window).on("load", ()=>{
   getData();
   endLoad();
 });
