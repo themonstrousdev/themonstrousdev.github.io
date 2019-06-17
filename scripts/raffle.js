@@ -64,6 +64,8 @@ $("#updates button[type=submit]").click(()=>{
     }).insertBefore("#updates form");
 
     $("[name=message]").css("box-shadow", "box-shadow: 0 0 1vh var(--red);");
+
+    return false;
   }
 
   $.ajax({
@@ -80,7 +82,7 @@ $("#updates button[type=submit]").click(()=>{
     $("<b>", {
       class: "green reply",
       style: "text-align: center",
-      html: "Feedback sent!"
+      html: "Raffle sent!"
     }).insertBefore("#updates form");
 
     setTimeout(() => {
@@ -91,7 +93,7 @@ $("#updates button[type=submit]").click(()=>{
     }, 3000);
   });
 
-  $("[name=sender], [name=email], [name=message], [name=]").val("");
+  $("[name=sender], [name=email], [name=message], [name=discord]").val("");
 
   
 
