@@ -893,7 +893,7 @@ input[name="submit"]:hover {
 }
 
 #feedback textarea,
-#updates, textarea {
+#updates textarea {
   width: 40vw;
   min-height: 30vh;
   margin-bottom: 2vh;

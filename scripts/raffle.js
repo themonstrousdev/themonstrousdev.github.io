@@ -15,6 +15,7 @@ function fetchData() {
   })
   .then(data => {
     raffles = data;
+    loaded = true;
     endLoad();
   })
   .catch(err => {
