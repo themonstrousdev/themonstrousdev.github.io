@@ -95,7 +95,7 @@ $("#updates button[type=submit]").click(()=>{
 
   $("[name=sender], [name=email], [name=message], [name=discord]").val("");
 
-  
+  fetchData();
 
   return false;
 });
