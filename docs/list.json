@@ -1,37 +1,22 @@
 {
   "Accomodating": [
     {
-      "name": "Malachi Wolfe",
+      "name": "Harken",
+      "stage": "Visualization",
+      "comment": {
+        "color": "yellow",
+        "text": "making draft"
+      }
+    },
+    {
+      "name": "Armorga",
       "stage": "Consultation",
       "comment": {
         "color": "green",
         "text": "received profile information"
       }
-    },
-    {
-      "name": "Harken",
-      "stage": "Visualization",
-      "comment": {
-        "color": "yellow",
-        "text": "making first draft"
-      }
     }
   ],
-  "On Hold": [
-    {
-      "name": "Wenzie",
-      "comment": {
-        "color": "yellow",
-        "text": "Waiting for art"
-      }
-    },
-    {
-      "name": "Fantasy",
-      "comment": {
-        "color": "yellow",
-        "text": "Waiting for art"
-      }
-    }
-  ],
+  "On Hold": [],
   "Waiting List": ["No one!"]
 }
