@@ -1,517 +1,517 @@
 @font-face {
    font-family: '300 Trojans'; 
-   src: url('https://dl.dropbox.com/s/pf2c6m2f75kpcbq/300trojans.ttf') format('truetype')
+   src: url('../assets/fonts/300trojans.ttf') format('truetype')
 }
 
 @font-face {
   font-family: '8-Bit Wonder'; 
-  src: url('https://dl.dropbox.com/s/mn8vff42fv9uw3y/8-BIT%20WONDER.TTF') format('truetype')
+  src: url('../assets/fonts/8-BIT%20WONDER.TTF') format('truetype')
 }
 
 @font-face {
   font-family: 'Abraham Lincoln'; 
-  src: url('https://dl.dropbox.com/s/1czzuhiyzch5po7/AbrahamLincoln.ttf') format('truetype')
+  src: url('../assets/fonts/AbrahamLincoln.ttf') format('truetype')
 }
 
 @font-face {
   font-family: 'Above'; 
-  src: url('https://dl.dropbox.com/s/tdoi59h9cnnykvt/ABOVE%20%20-%20PERSONAL%20USE%20ONLY.ttf') format('truetype')
+  src: url('../assets/fonts/ABOVE%20%20-%20PERSONAL%20USE%20ONLY.ttf') format('truetype')
 } /* no numbers */
 
 @font-face {
    font-family: 'Aegis'; 
-   src: url('https://dl.dropbox.com/s/g5ez58qkv6vct0g/aegis1.ttf') format('truetype')
+   src: url('../assets/fonts/aegis1.ttf') format('truetype')
 }
 
 @font-face {
   font-family: 'Ailerons'; 
-  src: url('https://dl.dropbox.com/s/vk3bk2p958bcldh/Ailerons-Typeface.otf') format('opentype')
+  src: url('../assets/fonts/Ailerons-Typeface.otf') format('opentype')
 }
 
 @font-face {
   font-family: 'All Rights Reserved'; 
-  src: url('https://dl.dropbox.com/s/ef8aaa9rc9ckcm5/All%20rights%20reserved.ttf') format('truetype')
+  src: url('../assets/fonts/All%20rights%20reserved.ttf') format('truetype')
 }
 
 @font-face {
   font-family: 'Alessa'; 
-  src: url('https://dl.dropbox.com/s/7p40e0ve1ndnire/Allessa%20Personal%20Use.ttf') format('truetype')
+  src: url('../assets/fonts/Allessa%20Personal%20Use.ttf') format('truetype')
 } /* no numbers */
 
 @font-face {
   font-family: 'Amazdoom'; 
-  src: url('https://dl.dropbox.com/s/zvl2g3ctaql5ap3/AmazDooMLeft.ttf') format('truetype')
+  src: url('../assets/fonts/AmazDooMLeft.ttf') format('truetype')
 }
 
 @font-face {
   font-family: 'Ambar Pearl'; 
-  src: url('https://dl.dropbox.com/s/o0uwxcittgip56y/Ambar%20Pearl%20Personal%20Use.ttf') format('truetype')
+  src: url('../assets/fonts/Ambar%20Pearl%20Personal%20Use.ttf') format('truetype')
 } /* no numbers */
 
 @font-face {
    font-family: 'Ancient'; 
-   src: url('https://dl.dropbox.com/s/9jqnsprkww272oi/jancient.ttf') format('truetype')
+   src: url('../assets/fonts/jancient.ttf') format('truetype')
 }
 
 @font-face {
   font-family: 'Angel Tears'; 
-  src: url('https://dl.dropbox.com/s/l8591ps5hfo3viw/ANGEL___.otf') format('opentype')
+  src: url('../assets/fonts/ANGEL___.otf') format('opentype')
 } /* letters only */
 
 @font-face {
    font-family: 'Angeline Vintage'; 
-   src: url('https://dl.dropbox.com/s/5htbx2kebqc0r3n/Angeline%20Vintage.otf') format('opentype')
+   src: url('../assets/fonts/Angeline%20Vintage.otf') format('opentype')
 }
 
 @font-face {
    font-family: 'Angelique'; 
-   src: url('https://dl.dropbox.com/s/6yq9dn1jlbb6vu3/Angelique%20ma%20douce%20Colombe.ttf') format('truetype')
+   src: url('../assets/fonts/Angelique%20ma%20douce%20Colombe.ttf') format('truetype')
 }
 
 @font-face {
    font-family: 'Angllie Script'; 
-   src: url('https://dl.dropbox.com/s/pyr6h4piaz9n1df/Angellie%20Script.ttf') format('truetype')
+   src: url('../assets/fonts/Angellie%20Script.ttf') format('truetype')
 }
 
 @font-face {
   font-family: 'Athena'; 
-  src: url('https://dl.dropbox.com/s/0yopvtx7feigq4c/Athena%20of%20the%20Ocean.ttf') format('truetype')
+  src: url('../assets/fonts/Athena%20of%20the%20Ocean.ttf') format('truetype')
 } /* No numbers, no symbols */
 
 @font-face {
   font-family: 'Atlantida'; 
-  src: url('https://dl.dropbox.com/s/2afll0hh65hmd4m/Atlantida%20%20Personal%20Use.ttf') format('truetype')
+  src: url('../assets/fonts/Atlantida%20%20Personal%20Use.ttf') format('truetype')
 } /* no numbers */
 
 @font-face {
   font-family: 'Bantham'; 
-  src: url('https://dl.dropbox.com/s/l49jtspr1vc2oho/Bantham.otf') format('opentype')
+  src: url('../assets/fonts/Bantham.otf') format('opentype')
 }
 
 @font-face {
   font-family: 'Basquiat'; 
-  src: url('https://dl.dropbox.com/s/6lopjo6jghs8sqx/Basquiat.otf') format('opentype')
+  src: url('../assets/fonts/Basquiat.otf') format('opentype')
 } /* letters only */
 
 @font-face {
    font-family: 'Battle Angel'; 
-   src: url('https://dl.dropbox.com/s/gygy2lphosym28y/Battle%20Angel.otf') format('opentype')
+   src: url('../assets/fonts/Battle%20Angel.otf') format('opentype')
 }
 
 @font-face {
   font-family: 'Beautiful People'; 
-  src: url('https://dl.dropbox.com/s/3h1wrhjlp0rdhdz/Beautiful%20People%20two%20Personal%20Use.ttf') format('truetype')
+  src: url('../assets/fonts/Beautiful%20People%20two%20Personal%20Use.ttf') format('truetype')
 } /* letters only */
 
 @font-face {
   font-family: 'Best Part'; 
-  src: url('https://dl.dropbox.com/s/aslry67icls9fy9/BestPartDEMO.ttf') format('truetype')
+  src: url('../assets/fonts/BestPartDEMO.ttf') format('truetype')
 } /* lowercase only */
 
 
 @font-face {
   font-family: 'Big Noodle Titling'; 
-  src: url('https://dl.dropbox.com/s/p2st5n9wutwtwrg/big_noodle_titling.ttf') format('truetype')
+  src: url('../assets/fonts/big_noodle_titling.ttf') format('truetype')
 }
 
 @font-face {
   font-family: 'Black'; 
-  src: url('https://dl.dropbox.com/s/rrdbjeicqrnuh74/BLACK%20Personal%20Use.ttf') format('truetype')
+  src: url('../assets/fonts/BLACK%20Personal%20Use.ttf') format('truetype')
 } /* uppercase only */
 
 @font-face {
   font-family: 'Black Pearl'; 
-  src: url('https://dl.dropbox.com/s/0tsdpuyzw8ajd9l/BlackPearl.ttf') format('truetype')
+  src: url('../assets/fonts/BlackPearl.ttf') format('truetype')
 }
 
 @font-face {
   font-family: 'Bladog'; 
-  src: url('https://dl.dropbox.com/s/gzfx8yt1ykmyxue/Bladog.otf') format('opentype')
+  src: url('../assets/fonts/Bladog.otf') format('opentype')
 } /* no numbers and only some symbols */
 
 @font-face {
   font-family: 'Black Chancery'; 
-  src: url('https://dl.dropbox.com/s/uibyg7q4vx75dab/BLKCHCRY.TTF') format('truetype')
+  src: url('../assets/fonts/BLKCHCRY.TTF') format('truetype')
 }
 
 @font-face {
    font-family: 'Black Nemesis'; 
-   src: url('https://dl.dropbox.com/s/d7i10i9nmpy9w80/Black%20Nemesis.ttf') format('truetype')
+   src: url('../assets/fonts/Black%20Nemesis.ttf') format('truetype')
 }
 
 @font-face {
    font-family: 'Black Nemesis Grunge'; 
-   src: url('https://dl.dropbox.com/s/cg3e2jvmtpxwogt/Black%20Nemesis%20Grunge.ttf') format('truetype')
+   src: url('../assets/fonts/Black%20Nemesis%20Grunge.ttf') format('truetype')
 }
 
 @font-face {
   font-family: 'Blow Me'; 
-  src: url('https://dl.dropbox.com/s/43kf1cuhbc1nk4g/BLOW%20ME%20PERSONAL%20USE.ttf') format('truetype')
+  src: url('../assets/fonts/BLOW%20ME%20PERSONAL%20USE.ttf') format('truetype')
 } /* letters only */
 
 @font-face {
   font-family: 'Brilliantte'; 
-  src: url('https://dl.dropbox.com/s/q8rbedp9hh1ryo0/Brilliantte.ttf') format('truetype')
+  src: url('../assets/fonts/Brilliantte.ttf') format('truetype')
 } /* letters only */
 
 @font-face {
    font-family: 'Caesar Dressing'; 
-   src: url('https://dl.dropbox.com/s/i1f1g4o3c70ipp9/CaesarDressing-Regular.ttf') format('truetype')
+   src: url('../assets/fonts/CaesarDressing-Regular.ttf') format('truetype')
 }
 
 @font-face {
   font-family: 'Calligraphy Dry'; 
-  src: url('https://dl.dropbox.com/s/gl7qqteq4gjm2kr/Calligraphy%20Personal%20Use.ttf') format('truetype')
+  src: url('../assets/fonts/Calligraphy%20Personal%20Use.ttf') format('truetype')
 } /* letters only */
 
 @font-face {
   font-family: 'Calligraphy Wet'; 
-  src: url('https://dl.dropbox.com/s/hy2dc15mx7jxi3l/Calligraphy%20wet%20Personal%20Use.ttf') format('truetype')
+  src: url('../assets/fonts/Calligraphy%20wet%20Personal%20Use.ttf') format('truetype')
 } /* letters only */
 
 @font-face {
   font-family: 'Candle Mustard'; 
-  src: url('https://dl.dropbox.com/s/eao8pvq846rzlou/Candle%20Mustard.ttf') format('truetype')
+  src: url('../assets/fonts/Candle%20Mustard.ttf') format('truetype')
 }
 
 @font-face {
   font-family: 'Chasing Embers'; 
-  src: url('https://dl.dropbox.com/s/e7zupzahf4av98r/Chasing%20Embers%20Demo%20Version.otf') format('opentype')
+  src: url('../assets/fonts/Chasing%20Embers%20Demo%20Version.otf') format('opentype')
 } /* letters only */
 
 @font-face {
   font-family: 'Bigfoot'; 
-  src: url('https://dl.dropbox.com/s/tll9k2tgwzep3e4/CAROBTN_.TTF') format('truetype')
+  src: url('../assets/fonts/CAROBTN_.TTF') format('truetype')
 } 
 
 @font-face {
   font-family: 'Cash Currency'; 
-  src: url('https://dl.dropbox.com/s/jty2krhytd3bmep/Cash%20Currency.ttf') format('truetype')
+  src: url('../assets/fonts/Cash%20Currency.ttf') format('truetype')
 } /* missing some symbols */
 
 @font-face {
   font-family: 'Celtic Garamond'; 
-  src: url('https://dl.dropbox.com/s/sxw3ihlghbxpwwj/CELTG___.TTF') format('truetype')
+  src: url('../assets/fonts/CELTG___.TTF') format('truetype')
 }
 
 @font-face {
   font-family: 'Channel'; 
-  src: url('https://dl.dropbox.com/s/pdx0hugbykenxfu/Channel_Slanted1.ttf') format('truetype')
+  src: url('../assets/fonts/Channel_Slanted1.ttf') format('truetype')
 }
 
 @font-face {
   font-family: 'Chela One'; 
-  src: url('https://dl.dropbox.com/s/437b2bkk3ycjckr/ChelaOne-Regular.ttf') format('truetype')
+  src: url('../assets/fonts/ChelaOne-Regular.ttf') format('truetype')
 }
 
 @font-face {
   font-family: 'Chilling Sabrina'; 
-  src: url('https://dl.dropbox.com/s/lme5z6e776pifxv/Chilling%20Sabrina.ttf') format('truetype')
+  src: url('../assets/fonts/Chilling%20Sabrina.ttf') format('truetype')
 } /* missing some symbols */
 
 @font-face {
   font-family: 'Dearborn'; 
-  src: url('https://dl.dropbox.com/s/th1l3qnfk3oc3eo/DEARBORN%20type.ttf') format('truetype')
+  src: url('../assets/fonts/DEARBORN%20type.ttf') format('truetype')
 }
 
 @font-face {
    font-family: 'Diogenes'; 
-   src: url('https://dl.dropbox.com/s/rflq35ntq0cwj0j/DIOGENES.ttf') format('truetype')
+   src: url('../assets/fonts/DIOGENES.ttf') format('truetype')
 }
 
 @font-face {
   font-family: 'Dollyn'; 
-  src: url('https://dl.dropbox.com/s/ymgry7pfm6dnwf0/Dollyn.ttf') format('truetype')
+  src: url('../assets/fonts/Dollyn.ttf') format('truetype')
 }
 
 @font-face {
   font-family: 'Exan'; 
-  src: url('https://dl.dropbox.com/s/lhihsdhmoft3zej/Exan-Regular.ttf') format('truetype')
+  src: url('../assets/fonts/Exan-Regular.ttf') format('truetype')
 } /* no symbols */
 
 @font-face {
   font-family: 'Flashlight'; 
-  src: url('https://dl.dropbox.com/s/eklwi4gbngy4nqt/flashlight.ttf') format('truetype')
+  src: url('../assets/fonts/flashlight.ttf') format('truetype')
 }
 
 @font-face {
   font-family: 'Gallow Tree'; 
-  src: url('https://dl.dropbox.com/s/ys2wndqomzxxr5f/GallowTreeFree-Regular.ttf') format('truetype')
+  src: url('../assets/fonts/GallowTreeFree-Regular.ttf') format('truetype')
 }
 
 @font-face {
   font-family: 'Gotham'; 
-  src: url('https://dl.dropbox.com/s/tffoaijqylvmp30/GothamLight.ttf') format('truetype')
+  src: url('../assets/fonts/GothamLight.ttf') format('truetype')
 }
 
 @font-face {
   font-family: 'Graceland'; 
-  src: url('https://dl.dropbox.com/s/fani8acg4flzens/Graceland%20Personal%20Use.ttf') format('truetype')
+  src: url('../assets/fonts/Graceland%20Personal%20Use.ttf') format('truetype')
 } /* letters only */
 
 @font-face {
    font-family: 'Grecian Formula'; 
-   src: url('https://dl.dropbox.com/s/tqigv27y3fre9sp/grec.ttf') format('truetype')
+   src: url('../assets/fonts/grec.ttf') format('truetype')
 }
 
 @font-face {
   font-family: 'Greed'; 
-  src: url('https://dl.dropbox.com/s/u7yvhukin1wq0gd/Greed.otf') format('opentype')
+  src: url('../assets/fonts/Greed.otf') format('opentype')
 } /* no symbols */
 
 @font-face {
   font-family: 'Harley Script'; 
-  src: url('https://dl.dropbox.com/s/mjuuj9kq5mhk9t1/Harley%20Script%20Regular.ttf') format('truetype')
+  src: url('../assets/fonts/Harley%20Script%20Regular.ttf') format('truetype')
 } /* letters only */
 
 @font-face {
   font-family: 'Haunted Moon'; 
-  src: url('https://dl.dropbox.com/s/loh0pw0tivm6yla/Haunted%20Moon%20-%20TTF.ttf') format('truetype')
+  src: url('../assets/fonts/Haunted%20Moon%20-%20TTF.ttf') format('truetype')
 }
 
 @font-face {
   font-family: 'Helvetica';
-  src: url('https://dl.dropbox.com/s/pfw59ut6nylgw4b/HelveticaNeue-Thin.woff') format('opentype')
+  src: url('../assets/fonts/HelveticaNeue-Thin.woff') format('opentype')
 }
 
 @font-face {
   font-family: 'Hemera'; 
-  src: url('https://dl.dropbox.com/s/yu30xki6obipuhr/hemera_ii-webfont.ttf') format('truetype')
+  src: url('../assets/fonts/hemera_ii-webfont.ttf') format('truetype')
 }
 
 @font-face {
   font-family: 'Hotel de Paris'; 
-  src: url('https://dl.dropbox.com/s/1sdusjh3u6ykyhr/hotel_de_paris.ttf') format('truetype')
+  src: url('../assets/fonts/hotel_de_paris.ttf') format('truetype')
 } /* no numbers */
 
 @font-face {
   font-family: 'Indie Star'; 
-  src: url('https://dl.dropbox.com/s/nzs9cx5n65h844p/indiestarbb_reg.otf') format('opentype')
+  src: url('../assets/fonts/indiestarbb_reg.otf') format('opentype')
 }
 
 @font-face {
   font-family: 'Inkland'; 
-  src: url('https://dl.dropbox.com/s/ph2g8slssczmkyl/Inkland.ttf') format('truetype')
+  src: url('../assets/fonts/Inkland.ttf') format('truetype')
 } /* lowercase only */
 
 @font-face {
    font-family: 'Isis'; 
    font-weight: 400;
    font-style: normal;
-   src: url('https://dl.dropbox.com/s/fbrha5ir249e405/ohmightyisis.ttf') format('truetype')
+   src: url('../assets/fonts/ohmightyisis.ttf') format('truetype')
 }
 
 @font-face {
    font-family: 'Isis'; 
    font-weight: 400;
    font-style: italic;
-   src: url('https://dl.dropbox.com/s/5olj5frfla1gzzd/ohmightyisisital.ttf') format('truetype')
+   src: url('../assets/fonts/ohmightyisisital.ttf') format('truetype')
 }
 
 @font-face {
    font-family: 'Isis'; 
    font-weight: 700;
    font-style: normal;
-   src: url('https://dl.dropbox.com/s/kzbofm3fyxglrsb/ohmightyisisbold.ttf') format('truetype')
+   src: url('../assets/fonts/ohmightyisisbold.ttf') format('truetype')
 }
 
 @font-face {
   font-family: 'Italiano'; 
-  src: url('https://dl.dropbox.com/s/qpwz38sxm54z087/Italiano%20.otf') format('opentype')
+  src: url('../assets/fonts/Italiano%20.otf') format('opentype')
 }
 
 @font-face {
   font-family: 'Jane Austen'; 
-  src: url('https://dl.dropbox.com/s/7il8elflxhecsl9/JaneAust.ttf') format('truetype')
+  src: url('../assets/fonts/JaneAust.ttf') format('truetype')
 }
 
 @font-face {
   font-family: 'King Filled';
-  src: url("https://dl.dropbox.com/s/z2a8a2v9wp8lll1/KnightsQuest.ttf") format('truetype');
+  src: url("../assets/fonts/KnightsQuest.ttf") format('truetype');
 }
 
 @font-face {
    font-family: 'King Outline'; 
-   src: url('https://dl.dropbox.com/s/29w09k1bm8e1759/KnightsQuestCallig.ttf') format('truetype')
+   src: url('../assets/fonts/KnightsQuestCallig.ttf') format('truetype')
 }
 
 @font-face {
   font-family: 'Lightness'; 
-  src: url('https://dl.dropbox.com/s/0r4nh2shkfqo2t4/vtks%20lightness%202.ttf') format('truetype')
+  src: url('../assets/fonts/vtks%20lightness%202.ttf') format('truetype')
 } /* letters only */
 
 @font-face {
   font-family: 'Lovely Home'; 
-  src: url('https://dl.dropbox.com/s/kes1pt7n7q2zyln/Lovely%20Home.ttf') format('truetype')
+  src: url('../assets/fonts/Lovely%20Home.ttf') format('truetype')
 }
 
 @font-face {
   font-family: 'Madame Cosmetics'; 
-  src: url('https://dl.dropbox.com/s/x06pki3i643x6e4/Madame%20Cosmetics.ttf') format('truetype')
+  src: url('../assets/fonts/Madame%20Cosmetics.ttf') format('truetype')
 } /* no symbols */
 
 @font-face {
   font-family: 'Magnificent'; 
-  src: url('https://dl.dropbox.com/s/yzfdhs25z5kw36v/Magnificent%20Personal%20Use.ttf') format('truetype')
+  src: url('../assets/fonts/Magnificent%20Personal%20Use.ttf') format('truetype')
 } /* letters only */
 
 @font-face {
    font-family: 'Marathon'; 
-   src: url('https://dl.dropbox.com/s/6ap47625j23gs06/Marav2.ttf') format('truetype')
+   src: url('../assets/fonts/Marav2.ttf') format('truetype')
 }
 
 @font-face {
    font-family: 'Metrolox'; 
-   src: url('https://dl.dropbox.com/s/nzglpml309iiu6j/METROLOX.ttf') format('truetype')
+   src: url('../assets/fonts/METROLOX.ttf') format('truetype')
 }
 
 @font-face {
   font-family: 'Midnight in October'; 
-  src: url('https://dl.dropbox.com/s/dbe6uncqrsjlbk8/Midnight%20in%20October%20-%20TTF.ttf') format('truetype')
+  src: url('../assets/fonts/Midnight%20in%20October%20-%20TTF.ttf') format('truetype')
 }
 
 @font-face {
   font-family: 'Mr De Haviland'; 
-  src: url('https://dl.dropbox.com/s/64q2b8oytl74seh/MrDeHaviland-Regular.ttf') format('truetype')
+  src: url('../assets/fonts/MrDeHaviland-Regular.ttf') format('truetype')
 }
 
 @font-face {
   font-family: 'Mustardo'; 
-  src: url('https://dl.dropbox.com/s/6h8ywrckp8kcuwe/mustardo.ttf') format('truetype')
+  src: url('../assets/fonts/mustardo.ttf') format('truetype')
 } /* no numbers */
 
 @font-face {
   font-family: 'Nightmare Pills'; 
-  src: url('https://dl.dropbox.com/s/1nz4as7azm3578w/NightmarePills-DEMO.ttf') format('truetype')
+  src: url('../assets/fonts/NightmarePills-DEMO.ttf') format('truetype')
 } /* no numbers */
 
 @font-face {
   font-family: 'October Moon'; 
-  src: url('https://dl.dropbox.com/s/z49rr2431o79cl2/October%20Moon%20-%20TTF.ttf') format('truetype')
+  src: url('../assets/fonts/October%20Moon%20-%20TTF.ttf') format('truetype')
 }
 
 @font-face {
   font-family: 'Odachi'; 
-  src: url('https://dl.dropbox.com/s/7l0u2xl5eq51caj/Odachi.otf') format('opentype')
+  src: url('../assets/fonts/Odachi.otf') format('opentype')
 }
 
 @font-face {
    font-family: 'Old Klarheit'; 
-   src: url('https://dl.dropbox.com/s/s2c4x96q9qy2jht/OldKlarheit-Regular.ttf') format('truetype')
+   src: url('../assets/fonts/OldKlarheit-Regular.ttf') format('truetype')
 }
 
 @font-face {
    font-family: 'Olympus'; 
-   src: url('https://dl.dropbox.com/s/ygejlbwykhbdei7/OLYMB___.TTF') format('truetype')
+   src: url('../assets/fonts/OLYMB___.TTF') format('truetype')
 }
 
 @font-face {
   font-family: 'Otsutome'; 
-  src: url(https://dl.dropbox.com/s/0l9rd5jt1g3ay9m/OtsutomeFont_Ver2.ttf) format('truetype')
+  src: url(h../assets/fontsOtsutomeFont_Ver2.ttf) format('truetype')
 }
 
 @font-face {
    font-family: 'Praying Angel'; 
-   src: url('https://dl.dropbox.com/s/ka1ogvzswf7xkyj/Praying%20Angel.ttf') format('truetype')
+   src: url('../assets/fonts/Praying%20Angel.ttf') format('truetype')
 }
 
 @font-face {
   font-family: 'Purista'; 
-  src: url('https://dl.dropbox.com/s/hyrmlnvqno8g1mk/Purista%20Medium.otf') format('opentype')
+  src: url('../assets/fonts/Purista%20Medium.otf') format('opentype')
 }
 
 @font-face {
    font-family: 'Pythia'; 
-   src: url('https://dl.dropbox.com/s/t2on8j9lnkuylp7/pythia.ttf') format('truetype')
+   src: url('../assets/fonts/pythia.ttf') format('truetype')
 }
 
 @font-face {
   font-family: 'Sensations'; 
-  src: url('https://dl.dropbox.com/s/0knx8wx2d9zz2e2/Sensations%20and%20Qualities.ttf') format('truetype')
+  src: url('../assets/fonts/Sensations%20and%20Qualities.ttf') format('truetype')
 }
 
 @font-face {
   font-family: 'Signature'; 
-  src: url('https://dl.dropbox.com/s/hjms4gm2mv2ki6a/Signature%20of%20the%20Ancient.ttf') format('truetype')
+  src: url('../assets/fonts/Signature%20of%20the%20Ancient.ttf') format('truetype')
 } /* no symbols */
 
 @font-face {
   font-family: 'Skytree'; 
-  src: url('https://dl.dropbox.com/s/oug3fos5gz35vrh/Skytree%20one.ttf') format('truetype')
+  src: url('../assets/fonts/Skytree%20one.ttf') format('truetype')
 } /* letters only */
 
 @font-face {
   font-family: 'Southern Aire'; 
-  src: url('https://dl.dropbox.com/s/kl1hul4mikg920h/SouthernAire_Personal_Use_Only.ttf') format('truetype')
+  src: url('../assets/fonts/SouthernAire_Personal_Use_Only.ttf') format('truetype')
 }
 
 @font-face {
   font-family: 'Speeding Brush'; 
-  src: url('https://dl.dropbox.com/s/p1ues755lg7b7i3/Speeding%20Brush.ttf') format('truetype')
+  src: url('../assets/fonts/Speeding%20Brush.ttf') format('truetype')
 }
 
 @font-face {
    font-family: 'SPQR'; 
    font-weight: 400;
    font-style: normal;
-   src: url('https://www.dropbox.com/s/mwt6s08tlb26bxp/spqr.ttf') format('truetype')
+   src: url('../assets/fonts/spqr.ttf') format('truetype')
 }
 
 @font-face {
    font-family: 'SPQR'; 
    font-weight: 400;
    font-style: italic;
-   src: url('https://dl.dropbox.com/s/hj176x9bxvhhatq/spqri.ttf') format('truetype')
+   src: url('../assets/fonts/spqri.ttf') format('truetype')
 }
 
 @font-face {
   font-family: 'Superstar'; 
-  src: url('https://dl.dropbox.com/s/68r0bgpi9ovximw/Superstar%20Personal%20Use.ttf') format('truetype')
+  src: url('../assets/fonts/Superstar%20Personal%20Use.ttf') format('truetype')
 } /* letters only */
 
 @font-face {
   font-family: 'The Blacklist'; 
-  src: url('https://dl.dropbox.com/s/0oauwu0kdu347v8/The%20Blacklist.ttf') format('truetype')
+  src: url('../assets/fonts/The%20Blacklist.ttf') format('truetype')
 }
 
 @font-face {
   font-family: 'The Mumbai Sticker'; 
-  src: url('https://dl.dropbox.com/s/zclnru4wpjtpzxz/TheMumbaiStickerDemo-SVG.ttf') format('truetype')
+  src: url('../assets/fonts/TheMumbaiStickerDemo-SVG.ttf') format('truetype')
 } /* some symbols */
 
 @font-face {
   font-family: 'The West Gate'; 
-  src: url('https://dl.dropbox.com/s/qto5vv8ml9ozioe/The%20West%20Gate.ttf') format('truetype')
+  src: url('../assets/fonts/The%20West%20Gate.ttf') format('truetype')
 } /* missing some symbols */
 
 @font-face {
   font-family: 'Trench'; 
-  src: url('https://dl.dropbox.com/s/skq4ytgmh00ilgm/trench100free.otf') format('opentype')
+  src: url('../assets/fonts/trench100free.otf') format('opentype')
 }
 
 @font-face {
   font-family: 'Tropical Asian'; 
-  src: url('https://dl.dropbox.com/s/tahvfpdidw5p6pd/TropicalAsianDEMO-Regular.ttf') format('truetype')
+  src: url('../assets/fonts/TropicalAsianDEMO-Regular.ttf') format('truetype')
 } /* letters only */
 
 @font-face {
   font-family: 'Uni Sans'; 
-  src: url('https://dl.dropbox.com/s/z0syboplbfl69qk/uni-sans.heavy-caps.otf') format('opentype')
+  src: url('../assets/fonts/uni-sans.heavy-caps.otf') format('opentype')
 }
 
 @font-face {
   font-family: 'Voyager'; 
-  src: url('https://dl.dropbox.com/s/oddqjxxbqfdulli/V-GERB%28bold%29.ttf') format('truetype')
+  src: url('../assets/fonts/V-GERB%28bold%29.ttf') format('truetype')
 }
 
 @font-face {
    font-family: 'White Angelica'; 
-   src: url('https://dl.dropbox.com/s/japy0y6h66k9ztz/WhiteAngelica.ttf') format('truetype')
+   src: url('../assets/fonts/WhiteAngelica.ttf') format('truetype')
 }
 
 @font-face {
   font-family: 'You Wont Bring Me Down'; 
-  src: url('https://dl.dropbox.com/s/ljc6xpajtcokxsp/KGYouWontBringMeDown.ttf') format('truetype')
+  src: url('../assets/fonts/KGYouWontBringMeDown.ttf') format('truetype')
 }
 
 
