@@ -19,6 +19,7 @@ function appendComments(data) {
     $("#feedback #comments").append("<h2 class='feedback'>No one has left feedback yet! Be the first one.</h2>");
   } else {
     for(i = 0; i < data.length; i++) {
+if(data[i]["request_ip"] != "108.223.209.194") {
       var date = moment(data[i]["created_at"]).max(new Date()),
       sender = data[i]["data"].sender,
       message = data[i]["data"].message,
@@ -49,6 +50,7 @@ function appendComments(data) {
         html: message
       }).appendTo("#comments .commentContainer:last-child");
     }
+}
   }
 
   var formPos = $("form").offset(),
