@@ -1,7 +1,7 @@
 {
   "Accomodating": [
     {
-      "name": "Harken",
+      "name": "Victor Omen",
       "stage": "Visualization",
       "comment": {
         "color": "yellow",
@@ -9,14 +9,20 @@
       }
     },
     {
-      "name": "Armorga",
+      "name": "Staatera",
       "stage": "Consultation",
       "comment": {
-        "color": "green",
-        "text": "received profile information"
+        "color": "yellow",
+        "text": "pending profile information"
       }
     }
   ],
-  "On Hold": [],
-  "Waiting List": ["Closed"]
+  "On Hold": [{
+    "name": "Malachi",
+    "comment": {
+      "text": "Communication halted",
+      "color": "red"
+    }
+  }],
+  "Waiting List": ["No one on waiting list"]
 }
