@@ -510,6 +510,27 @@
 }
 
 @font-face {
+   font-family: 'Whitney'; 
+   font-style: normal;
+   font-weight: 400;
+   src: url('../assets/fonts/WhitneyBook.ttf') format('truetype')
+}
+
+@font-face {
+   font-family: 'Whitney'; 
+    font-style: normal;
+    font-weight: 700;
+   src: url('../assets/fonts/WhitneyBold.ttf') format('truetype');
+}
+
+@font-face {
+   font-family: 'Whitney'; 
+    font-style: oblique;
+    font-weight: 700;
+   src: url('../assets/fonts/WhitneyBoldItalic.ttf') format('truetype');
+}
+
+@font-face {
   font-family: 'You Wont Bring Me Down'; 
   src: url('../assets/fonts/KGYouWontBringMeDown.ttf') format('truetype')
 }
