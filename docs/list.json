@@ -7,6 +7,22 @@
         "color": "yellow",
         "text": "pending profile information"
       }
+    },
+    {
+      "name": "Ditto",
+      "stage": "Consultation",
+      "comment": {
+        "color": "green",
+        "text": "received profile information"
+      }
+    },
+    {
+      "name": "Captain Alesha",
+      "stage": "Visualization",
+      "comment": {
+        "color": "yellow",
+        "text": "making profile draft"
+      }
     }
   ],
   "On Hold": [{
