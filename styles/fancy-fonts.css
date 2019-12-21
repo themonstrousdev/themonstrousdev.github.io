@@ -416,6 +416,11 @@
 }
 
 @font-face {
+  font-family: 'Primitive';
+  src: url('../assets/fonts/Primitive.ttf') format('truetype')
+}
+
+@font-face {
   font-family: 'Purista'; 
   src: url('../assets/fonts/Purista%20Medium.otf') format('opentype')
 }
