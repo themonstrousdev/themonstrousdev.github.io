@@ -74,6 +74,11 @@
 }
 
 @font-face {
+  font-family: 'Aquiline';
+  src: url('../assets/fonts/aquilinetwo.ttf') format('truetype')
+}
+
+@font-face {
   font-family: 'Athena'; 
   src: url('../assets/fonts/Athena%20of%20the%20Ocean.ttf') format('truetype')
 } /* No numbers, no symbols */
@@ -215,6 +220,11 @@
 }
 
 @font-face {
+  font-family: 'Depressionist'; 
+  src: url('../assets/fonts/Depressionist_3_Revisited_2010.ttf') format('truetype')
+}
+
+@font-face {
    font-family: 'Diogenes'; 
    src: url('../assets/fonts/DIOGENES.ttf') format('truetype')
 }
@@ -235,8 +245,18 @@
 }
 
 @font-face {
+  font-family: 'Freeboot'; 
+  src: url('../assets/fonts/FreebooterUpdated.ttf') format('truetype')
+}
+
+@font-face {
   font-family: 'Gallow Tree'; 
   src: url('../assets/fonts/GallowTreeFree-Regular.ttf') format('truetype')
+}
+
+@font-face {
+  font-family: 'Goldilocks'; 
+  src: url('../assets/fonts/Goldilocks_Revised.ttf') format('truetype')
 }
 
 @font-face {
@@ -436,6 +456,16 @@
 }
 
 @font-face {
+  font-family: 'Serial Publication'; 
+  src: url('../assets/fonts/Serialpublicationdemo-qxo1.ttf') format('truetype')
+}
+
+@font-face {
+  font-family: 'Share'; 
+  src: url('../assets/fonts/share.ttf') format('truetype')
+}
+
+@font-face {
   font-family: 'Signature'; 
   src: url('../assets/fonts/Signature%20of%20the%20Ancient.ttf') format('truetype')
 } /* no symbols */
@@ -467,6 +497,11 @@
    font-weight: 400;
    font-style: italic;
    src: url('../assets/fonts/spqri.ttf') format('truetype')
+}
+
+@font-face {
+  font-family: 'Subway Novella'; 
+  src: url('../assets/fonts/SubwayNovella-KEw7.ttf') format('truetype')
 }
 
 @font-face {
