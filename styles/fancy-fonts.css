@@ -290,6 +290,20 @@
 }
 
 @font-face {
+  font-family: 'Hello Denver'; 
+  src: url('../assets/fonts/hellodenverdisplayregular_v1.6.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Hello Denver'; 
+  src: url('../assets/fonts/hellodenverdisplaybold_v1.6.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 600;
+}
+
+@font-face {
   font-family: 'Helvetica';
   src: url('../assets/fonts/HelveticaNeue-Thin.woff') format('opentype')
 }
