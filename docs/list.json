@@ -1,11 +1,10 @@
 {
   "Accomodating": [
     {
-      "name": "Staatera",
-      "stage": "Consultation",
+      "name": "Malachi",
       "comment": {
-        "color": "yellow",
-        "text": "pending profile information"
+        "text": "yellow",
+        "color": "making profile draft"
       }
     },
     {
@@ -17,20 +16,14 @@
       }
     },
     {
-      "name": "Captain Alesha",
-      "stage": "Visualization",
+      "name": "Staatera",
+      "stage": "Consultation",
       "comment": {
         "color": "yellow",
-        "text": "making profile draft"
+        "text": "pending profile information"
       }
     }
   ],
-  "On Hold": [{
-    "name": "Malachi",
-    "comment": {
-      "text": "Communication halted",
-      "color": "red"
-    }
-  }],
-  "Waiting List": ["No one on waiting list"]
+  "On Hold": [],
+  "Waiting List": ["Sett the Boss"]
 }
