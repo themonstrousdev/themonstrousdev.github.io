@@ -201,7 +201,7 @@ $(document).ready(()=>{
       }, 1000);
     }  
     
-    if(currentTab == $(this).attr("opens")) {
+    if(currentTab == $(this).attr("opens") || !(this).attr("opens")) {
       return;
     }
     
