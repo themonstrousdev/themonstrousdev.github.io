@@ -1,6 +1,16 @@
 {
   "commission": [
     {
+      "name": "Captain Alesha",
+      "background": "https://i.imgur.com/wvH793y.png",
+      "preview": "https://i.imgur.com/wvH793y.png"
+    },
+    {
+      "name": "Kama",
+      "background": "https://i.imgur.com/z5nz3ws.png",
+      "preview": "https://i.imgur.com/z5nz3ws.png"
+    },
+    {
       "name": "Ragna",
       "background": "https://i.imgur.com/4Gu8ssE.png",
       "preview": "https://i.imgur.com/G9xi1XO.gif"
