@@ -162,7 +162,7 @@ $(window).on("swiped-right", ()=>{
   return false;
 });
 
-$("body").on("click", ".unset-style:not(.menu)", function(){
+$("body").on("click", ".unset-style:not(.menu):not(a)", function(){
   if($("#header").hasClass("open")) {
     $("#header").removeClass("open");
     $("#headerExit").fadeOut(500);
