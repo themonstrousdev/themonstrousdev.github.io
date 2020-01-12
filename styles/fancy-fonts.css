@@ -109,6 +109,11 @@
 } /* letters only */
 
 @font-face {
+  font-family: 'Beon'; 
+  src: url('../assets/fonts/Beon.otf') format('opentype')
+}
+
+@font-face {
   font-family: 'Best Part'; 
   src: url('../assets/fonts/BestPartDEMO.ttf') format('truetype')
 } /* lowercase only */
@@ -516,6 +521,11 @@
   font-family: 'Superstar'; 
   src: url('../assets/fonts/Superstar%20Personal%20Use.ttf') format('truetype')
 } /* letters only */
+
+@font-face {
+  font-family: 'Text Me'; 
+  src: url('../assets/fonts/TextMeOne-Regular.ttf') format('truetype')
+}
 
 @font-face {
   font-family: 'The Blacklist'; 
