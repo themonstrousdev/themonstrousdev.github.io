@@ -294,13 +294,7 @@
   src: url('../assets/fonts/hellodenverdisplayregular_v1.6.ttf') format('truetype');
   font-style: normal;
   font-weight: 400;
-}
-
-@font-face {
-  font-family: 'Hello Denver'; 
-  src: url('../assets/fonts/hellodenverdisplaybold_v1.6.ttf') format('truetype');
-  font-style: normal;
-  font-weight: 600;
+  text-transform: uppercase;
 }
 
 @font-face {
@@ -441,7 +435,7 @@
 
 @font-face {
   font-family: 'Otsutome'; 
-  src: url(h../assets/fontsOtsutomeFont_Ver2.ttf) format('truetype')
+  src: url('../assets/fontsOtsutomeFont_Ver2.ttf') format('truetype')
 }
 
 @font-face {
