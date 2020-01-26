@@ -1,22 +1,14 @@
 {
-  "Accomodating": [
-    {
-      "name": "Malachi",
+  "Accomodating": [{
+      "name": "Sett the Boss",
+      "stage": "Visualization",
       "comment": {
         "color": "yellow",
-        "text": "making profile draft"
+        "text": "starting draft"
       }
     },
     {
-      "name": "Ditto",
-      "stage": "Consultation",
-      "comment": {
-        "color": "green",
-        "text": "received profile information"
-      }
-    },
-    {
-      "name": "Staatera",
+      "name": "Omega",
       "stage": "Consultation",
       "comment": {
         "color": "yellow",
@@ -24,6 +16,13 @@
       }
     }
   ],
-  "On Hold": [],
-  "Waiting List": ["Sett the Boss"]
+  "On Hold": [{
+    "name": "Staatera",
+    "stage": "Consultation",
+    "comment": {
+      "color": "yellow",
+      "text": "pending profile information -- lost contact"
+    }
+  }],
+  "Waiting List": []
 }
