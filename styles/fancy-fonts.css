@@ -255,6 +255,27 @@
 }
 
 @font-face {
+  font-family: 'Friz Quadrata'; 
+  src: url('../assets/fonts/Friz\ Quadrata\ Regular.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Friz Quadrata'; 
+  src: url('../assets/fonts/Friz\ Quadrata\ Italic.ttf') format('truetype');
+  font-style: italic;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Friz Quadrata'; 
+  src: url('../assets/fonts/Friz\ Quadrata\ Bold.otf') format('opentype');
+  font-style: normal;
+  font-weight: 600;
+}
+
+@font-face {
   font-family: 'Gallow Tree'; 
   src: url('../assets/fonts/GallowTreeFree-Regular.ttf') format('truetype')
 }
