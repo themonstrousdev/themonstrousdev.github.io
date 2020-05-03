@@ -1,28 +1,14 @@
 {
-  "Accomodating": [{
-      "name": "Sett the Boss",
-      "stage": "Visualization",
-      "comment": {
-        "color": "yellow",
-        "text": "starting draft"
-      }
-    },
+  "Accomodating": [
     {
-      "name": "Omega",
-      "stage": "Consultation",
+      "name": "---",
+      "stage": "---",
       "comment": {
-        "color": "yellow",
-        "text": "pending profile information"
+        "color": "red",
+        "text": "commissions closed until furter notice"
       }
     }
   ],
-  "On Hold": [{
-    "name": "Staatera",
-    "stage": "Consultation",
-    "comment": {
-      "color": "yellow",
-      "text": "pending profile information -- lost contact"
-    }
-  }],
-  "Waiting List": []
+  "On Hold": [],
+  "Waiting List": ["Waiting list is closed"]
 }
