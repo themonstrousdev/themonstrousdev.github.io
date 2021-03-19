@@ -564,6 +564,30 @@
 } /* missing some symbols */
 
 @font-face {
+  font-family: 'Titillium Web'; 
+  src: url('../assets/fonts/TitilliumWeb-Regular.ttf') format('truetype')
+}
+
+@font-face {
+  font-family: 'Titillium Web'; 
+  src: url('../assets/fonts/TitilliumWeb-Bold.ttf') format('truetype');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Titillium Web'; 
+  src: url('../assets/fonts/TitilliumWeb-Italic.ttf') format('truetype');
+  font-style: oblique;
+}
+
+@font-face {
+  font-family: 'Titillium Web'; 
+  src: url('../assets/fonts/TitilliumWeb-BoldItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: oblique;
+}
+
+@font-face {
   font-family: 'Trench'; 
   src: url('../assets/fonts/trench100free.otf') format('opentype')
 }
