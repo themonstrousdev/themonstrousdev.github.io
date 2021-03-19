@@ -1,3 +1,5 @@
+@import url("./font-variantions.css");
+
 @font-face {
    font-family: '300 Trojans'; 
    src: url('../assets/fonts/300trojans.ttf') format('truetype')
@@ -566,25 +568,6 @@
 @font-face {
   font-family: 'Titillium Web'; 
   src: url('../assets/fonts/TitilliumWeb-Regular.ttf') format('truetype')
-}
-
-@font-face {
-  font-family: 'Titillium Web'; 
-  src: url('../assets/fonts/TitilliumWeb-Bold.ttf') format('truetype');
-  font-weight: bold;
-}
-
-@font-face {
-  font-family: 'Titillium Web'; 
-  src: url('../assets/fonts/TitilliumWeb-Italic.ttf') format('truetype');
-  font-style: oblique;
-}
-
-@font-face {
-  font-family: 'Titillium Web'; 
-  src: url('../assets/fonts/TitilliumWeb-BoldItalic.ttf') format('truetype');
-  font-weight: bold;
-  font-style: oblique;
 }
 
 @font-face {
