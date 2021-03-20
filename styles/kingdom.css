@@ -1,0 +1,39 @@
+body {
+  background: #ccc url(https://i.imgur.com/dhRhTFb.png);
+  font-size: 0.9vw;
+  font-family: 'Montserrat';
+  color: #333;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.logo {
+  position: absolute;
+  top: 10vh;
+  width: 100vw;
+  height: 30vh;
+  background: url(https://i.imgur.com/EXD54cZ.png) center/auto 100% no-repeat;
+}
+
+.content {
+  position: absolute;
+  top: 33vh;
+  width: 100vw;
+  padding: 3vh 30vw;
+}
+
+b.king {
+  color: #d4af37;
+  text-shadow: 0.1vh 0.1vh 0 black;
+}
+
+form {
+  margin-top: 5vh;
+}
+
+form input[name=submit] {
+  width: 10vw;
+}
