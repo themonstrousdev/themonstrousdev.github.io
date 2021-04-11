@@ -1,4 +1,4 @@
-fetch(`${window.location.hostname == "www.themonster.xyz" || window.location.hostname == "localhost" ? "." : "https://www.themonster.xyz" }/styles/fancy-fonts.css`)
+fetch(`${window.location.hostname == "themonster.netlify.app" || window.location.hostname == "localhost" ? "." : "https://themonster.netlify.app" }/styles/fancy-fonts.css`)
   .then(res => {
   
     return res.text()
@@ -15,8 +15,8 @@ fetch(`${window.location.hostname == "www.themonster.xyz" || window.location.hos
     }
 
 
-    $("textarea#google-fonts-link").text('<link href="https://www.themonster.xyz/styles/google-fonts.css" rel="stylesheet">')
-    $("textarea#fancy-fonts-link").text('<link href="https://www.themonster.xyz/styles/fancy-fonts.css" rel="stylesheet">');
+    $("textarea#google-fonts-link").text('<link href="https://themonster.netlify.app/styles/google-fonts.css" rel="stylesheet">')
+    $("textarea#fancy-fonts-link").text('<link href="https://themonster.netlify.app/styles/fancy-fonts.css" rel="stylesheet">');
 
     $("#fonts .scroller").append($("<div>",{
       class: "flexBox"
