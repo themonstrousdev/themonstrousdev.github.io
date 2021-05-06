@@ -69,7 +69,7 @@ function changePicture(ind, field) {
   $("#gallOverlay .source").attr("opens", newCode);
 }
 
-fetch(`${window.location.hostname == "themonster.netlify.app" || window.location.hostname == "localhost" ? "." : "https://themonster.netlify.app" }/docs/profiles.json`)
+fetch(`${window.location.hostname == "themonster.netlify.app" || window.location.hostname == "themonstrousdev.github.io" || window.location.hostname == "localhost" ? "." : "https://themonster.github.io/" }/docs/profiles.json`)
   .then(res => {
     return res.json();
   })
