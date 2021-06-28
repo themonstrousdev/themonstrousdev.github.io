@@ -1,4 +1,4 @@
-fetch(`${window.location.hostname == "themonster.netlify.app" || window.location.hostname == "localhost" ? "." : "https://themonster.netlify.app" }/docs/list.json`)
+fetch(`${window.location.hostname == "themonstrousdev.github.io" || window.location.hostname == "localhost" ? "." : "https://themonstrousdev.github.io" }/docs/list.json`)
   .then(res => {
     return res.json()
   })

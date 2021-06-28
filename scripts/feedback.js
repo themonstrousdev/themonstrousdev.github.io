@@ -99,7 +99,7 @@ if(data[i]["request_ip"] != "108.223.209.194") {
 }
 
 function fetchData() {
-  //fetch(`https://getsimpleform.com/messages.json?api_token=${window.location.hostname == "themonster.netlify.app" || window.location.hostname == "localhost" ? "47d89ff8dfc0c28f18199752e9d3ff39" : "c3d5d9499780701b4ce87450444c2390"}`)
+  //fetch(`https://getsimpleform.com/messages.json?api_token=${window.location.hostname == "themonstrousdev.github.io" || window.location.hostname == "localhost" ? "47d89ff8dfc0c28f18199752e9d3ff39" : "c3d5d9499780701b4ce87450444c2390"}`)
   fetch("https://getsimpleform.com/messages.json?api_token=c3d5d9499780701b4ce87450444c2390")
   .then(res => {
     return res.json()
@@ -155,7 +155,7 @@ $("#feedback button[type=submit]").click(()=>{
 
   $.ajax({
     dataType: 'jsonp',
-    //url: `https://getsimpleform.com/messages/ajax?form_api_token=${window.location.hostname == "themonster.netlify.app" || window.location.hostname == "localhost" ? "7fc36e783f51a74e9efc7d5fe7391686" : "7d9c26e78cee5187a4f70d084223f5a5"}`,
+    //url: `https://getsimpleform.com/messages/ajax?form_api_token=${window.location.hostname == "themonstrousdev.github.io" || window.location.hostname == "localhost" ? "7fc36e783f51a74e9efc7d5fe7391686" : "7d9c26e78cee5187a4f70d084223f5a5"}`,
     url: "https://getsimpleform.com/messages/ajax?form_api_token=7d9c26e78cee5187a4f70d084223f5a5",
     data: {
       sender: sender,

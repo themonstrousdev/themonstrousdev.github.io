@@ -15,8 +15,8 @@ fetch(`./styles/fancy-fonts.css`)
     }
 
 
-    $("textarea#google-fonts-link").text('<link href="https://themonster.netlify.app/styles/google-fonts.css" rel="stylesheet">')
-    $("textarea#fancy-fonts-link").text('<link href="https://themonster.netlify.app/styles/fancy-fonts.css" rel="stylesheet">');
+    $("textarea#google-fonts-link").text('<link href="https://themonstrousdev.github.io/styles/google-fonts.css" rel="stylesheet">')
+    $("textarea#fancy-fonts-link").text('<link href="https://themonstrousdev.github.io/styles/fancy-fonts.css" rel="stylesheet">');
 
     $("#fonts .scroller").append($("<div>",{
       class: "flexBox"

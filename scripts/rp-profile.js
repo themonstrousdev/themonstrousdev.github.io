@@ -1,10 +1,10 @@
-var body = {url: "https://themonster.netlify.app/src/home.html"}, loaded = false, loader, date = new Date(), currentYear = date.getFullYear();
+var body = {url: "https://themonstrousdev.github.io/src/home.html"}, loaded = false, loader, date = new Date(), currentYear = date.getFullYear();
 
 var momentjs = document.createElement("script");
 momentjs.src = "https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js";
 document.head.appendChild(momentjs)
 
-$.getScript('https://themonster.netlify.app/scripts/libs/swiped-events-master/src/swiped-events.js', function() {
+$.getScript('https://themonstrousdev.github.io/scripts/libs/swiped-events-master/src/swiped-events.js', function() {
   logSuccess("Injected swipe detector");
 });
 
@@ -43,7 +43,7 @@ function showRP() {
   if($("#background").html() != "") {
     // do nothing
   } else {
-    fetch("https://themonster.netlify.app/src/rp-profile.html")
+    fetch("https://themonstrousdev.github.io/src/rp-profile.html")
     .then(res => {
       return res.text()
     })
@@ -211,8 +211,8 @@ $(document).ready(()=>{
     loaded = false;
     clearTimeout(loader);
     body = {
-      url: `https://themonster.netlify.app/src/${currentTab}.html`,
-      reqScript: script?`https://themonster.netlify.app/scripts/${script}.js`:null
+      url: `https://themonstrousdev.github.io/src/${currentTab}.html`,
+      reqScript: script?`https://themonstrousdev.github.io/scripts/${script}.js`:null
     }
 
     $(`.scrollerWrap.body:not(#${currentTab})`).fadeOut(200);
