@@ -1,4 +1,4 @@
-fetch(`${window.location.hostname == "themonster.netlify.app" || window.location.hostname == "localhost" ? "." : "https://themonster.netlify.app" }/styles/fancy-fonts.css`)
+fetch(`./styles/fancy-fonts.css`)
   .then(res => {
   
     return res.text()
