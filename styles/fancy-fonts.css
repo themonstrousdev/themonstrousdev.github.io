@@ -1,8 +1,8 @@
-@import url("./font-variantions.css");
+@import url("./font-variations.css");
 
 @font-face {
-   font-family: '300 Trojans'; 
-   src: url('../assets/fonts/300trojans.ttf') format('truetype')
+  font-family: '300 Trojans'; 
+  src: url('../assets/fonts/300trojans.ttf') format('truetype')
 }
 
 @font-face {
@@ -202,6 +202,11 @@
 } /* missing some symbols */
 
 @font-face {
+  font-family: 'Carinval Freakshow';
+  src: url('../assets/fonts/Carnevalee\ Freakshow.ttf') format('truetype')
+}
+
+@font-face {
   font-family: 'Celtic Garamond'; 
   src: url('../assets/fonts/CELTG___.TTF') format('truetype')
 }
@@ -306,6 +311,11 @@
   font-family: 'Greed'; 
   src: url('../assets/fonts/Greed.otf') format('opentype')
 } /* no symbols */
+
+@font-face {
+  font-family: 'Gunshot';
+  src: url('../assets/fonts/Gunshot.ttf') format('truetype')
+}
 
 @font-face {
   font-family: 'Harley Script'; 
