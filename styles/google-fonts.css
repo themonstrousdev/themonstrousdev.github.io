@@ -2306,6 +2306,14 @@
 }
 
 @font-face {
+  font-family: 'Hina Mincho';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/hinamincho/v2/2sDaZGBRhpXa2Jjz5w5LAGW5QakXdEOxxk9KVRLQhc3Kwq4cYmVxgA.3.woff2) format('woff2');
+  unicode-range: U+fa10, U+fa12-fa6d, U+fb00-fb04, U+fe10-fe19, U+fe30-fe42, U+fe44-fe52, U+fe54-fe66, U+fe68-fe6b, U+ff02, U+ff04, U+ff07, U+ff51, U+ff5b, U+ff5d, U+ff5f-ff60, U+ff66, U+ff69, U+ff87, U+ffa1-ffbe, U+ffc2-ffc7, U+ffca-ffcf, U+ffd2-ffd6;
+}
+
+@font-face {
   font-family: 'Iceberg';
   font-style: normal;
   font-weight: 400;
