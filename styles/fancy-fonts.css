@@ -162,6 +162,11 @@
 } /* letters only */
 
 @font-face {
+  font-family: 'Bookman Std';
+  src: url('../assets/fonts/BookmanStd-Demi.otf') format('opentype')');
+}
+
+@font-face {
   font-family: 'Brilliantte'; 
   src: url('../assets/fonts/Brilliantte.ttf') format('truetype')
 } /* letters only */
