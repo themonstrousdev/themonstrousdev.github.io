@@ -12,11 +12,8 @@ fetch(`./styles/fancy-fonts.css`)
 
    while(data.includes("font-family")) { 
       var font = data.slice(data.search("font-family") + 12, data.search(";"));
-      console.log(font);
       data = data.slice(data.search("}")+1);
-      console.log(data);
       allFonts.push(font);
-      console.log(allFonts);
     }
 
 
