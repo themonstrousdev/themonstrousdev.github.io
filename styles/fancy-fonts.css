@@ -452,6 +452,11 @@
 } /* no numbers */
 
 @font-face {
+  font-family: 'Never Settle';
+  src: url('../assets/fonts/NeverSettleDemo-z8dnX.ttf') format('truetype')
+}  /* no numbers */
+
+@font-face {
   font-family: 'Nightmare Pills'; 
   src: url('../assets/fonts/NightmarePills-DEMO.ttf') format('truetype')
 } /* no numbers */

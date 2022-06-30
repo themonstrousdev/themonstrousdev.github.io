@@ -8,10 +8,15 @@ fetch(`./styles/fancy-fonts.css`)
     var lastQuote = Math.floor(Math.random() * Math.floor(quotes.length)), nextQuote = null,
     allFonts = [];
 
+    console.log(data);
+
    while(data.includes("font-family")) { 
       var font = data.slice(data.search("font-family") + 12, data.search(";"));
+      console.log(font);
       data = data.slice(data.search("}")+1);
+      console.log(data);
       allFonts.push(font);
+      console.log(allFonts);
     }
 
 
