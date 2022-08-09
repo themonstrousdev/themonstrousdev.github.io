@@ -361,6 +361,11 @@
 }
 
 @font-face {
+  font-family: 'Inter';
+  src: url('../assets/fonts/Inter.otf') format('opentype')
+}
+
+@font-face {
   font-family: 'Inkland'; 
   src: url('../assets/fonts/Inkland.ttf') format('truetype')
 } /* lowercase only */
@@ -460,6 +465,11 @@
   font-family: 'Nightmare Pills'; 
   src: url('../assets/fonts/NightmarePills-DEMO.ttf') format('truetype')
 } /* no numbers */
+
+@font-face {
+  font-family: 'Nuber Next';
+  src: url('../assets/fonts/NuberNext.otf') format('opentype')
+}
 
 @font-face {
   font-family: 'October Moon'; 
