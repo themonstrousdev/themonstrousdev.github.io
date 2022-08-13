@@ -462,6 +462,11 @@
 }  /* no numbers */
 
 @font-face {
+  font-family: 'Nordeco';
+  src: url('../assets/fonts/Nordeco-Regular.ttf') format('truetype')
+}
+
+@font-face {
   font-family: 'Nightmare Pills'; 
   src: url('../assets/fonts/NightmarePills-DEMO.ttf') format('truetype')
 } /* no numbers */
