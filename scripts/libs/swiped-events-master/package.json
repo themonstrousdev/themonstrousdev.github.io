@@ -28,7 +28,7 @@
     "eslint-config-airbnb-base": "^11.2.0",
     "eslint-plugin-import": "^2.2.0",
     "express": "^4.15.3",
-    "gulp": "3.9.1",
+    "gulp": "4.0.2",
     "gulp-minify": "1.0.0",
     "gulp-string-replace": "^0.4.0",
     "run-sequence": "1.2.2",
